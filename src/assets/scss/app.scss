@@ -1,6 +1,6 @@
 @charset 'utf-8';
 
-@import 'settings';
+@import './_settings';
 @import 'foundation';
 @import 'motion-ui';
 
@@ -51,6 +51,8 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
+@import 'forms/select';
+@import 'components/coverage';
 @import 'components/header';
 @import 'components/intro';
-@import 'forms/select';
+@import 'components/features';

@@ -1,11 +1,28 @@
 
+	.intro {
+		background-image: url( 'http://lorempixel.com/400/200/sports/1/' );
+		background-size: cover;
+		padding: 3rem 0;
+	}
+
+	.intro__button {
+		h3,
+		p {
+			margin-bottom: 0;
+		}
+		margin-bottom: 0;
+	}
+
 	.intro__header {
 		padding: 3rem 0;
 	}
 
-	.intro__plan {
+	.intro__content {
 		background-color: rgba( 255,255,255,.7 );
-		padding: 3rem 0;
+	}
+
+	.intro__plan {
+		padding: 3rem 0 0 0;
 	}
 
 	.intro__plan__description {
@@ -15,6 +32,10 @@
 	.intro__plan__sub-title {
 		font-weight: bolder;
 		text-transform: uppercase;
+	}
+
+	.intro__price {
+		padding: 3rem 0;
 	}
 
 	.intro__price__amount {
