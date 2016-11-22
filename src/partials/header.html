@@ -1,11 +1,37 @@
 
 	<header class="header">
-		<div class="header__row row">
-			<div class="header__columns columns">
-				<figure class="header__logo">
-					<img src="" alt="">
-					<h1>Logotipo</h1>
-				</figure>
+		<div data-sticky-container>
+			<div class="z-depth-4" data-sticky data-options="marginTop:0;" style="width:100%; background-color: #8c51a1;">
+				<div class="header__row row align-middle">
+					<div class="header__columns columns ">
+						<figure class="header__logo text-center">
+							<img src="{{root}}/assets/img/logo.png" alt="Logotipo Red de Salud UC - CHRISTUS">
+						</figure>
+						<div id="headerMenu" class="header__menu">
+							<i class="fa fa-bars" aria-hidden="true"></i>
+							<i class="fa fa-times" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div id="headerList" class="header__columns columns">
+						<ul class="header__list row align-spaced">
+							<li class="header__list-item">
+								<a href="">Características</a>
+							</li>
+							<li class="header__list-item">
+								<a href="">Coberturas</a>
+							</li>
+							<li class="header__list-item">
+								<a href="">Requisitos</a>
+							</li>
+							<li class="header__list-item">
+								<a href="">Tarifas</a>
+							</li>
+							<li class="header__list-item">
+								<a href="">Contrátalo aquí</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 	</header>

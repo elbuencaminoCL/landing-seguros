@@ -17,20 +17,20 @@
 
 
 		<section class="coverage__list">
-			<div class="row text-center align-bottom">
+			<div class="coverage__list__row row text-center align-bottom">
 				<div class="columns small-4">
-					<p>Capital</p>
-					<p>Asegurado</p>
-					<div id="capital">UF 36.000</div>
+					<p class="coverage__list__row__desc">Capital</p>
+					<p class="coverage__list__row__desc">Asegurado</p>
+					<h3 id="capital" class="coverage__list__row__title">UF 36.000</h3>
 				</div>
 				<div class="columns small-4">
-					<p>Deducible</p>
-					<div id="deductible">UF 60</div>
+					<p class="coverage__list__row__desc">Deducible</p>
+					<h3 id="deductible" class="coverage__list__row__title">UF 60</h3>
 				</div>
 				<div class="columns small-4">
-					<p>Enfermedades con</p>
-					<p>deducible diferenciado <i class="icon"></i></p>
-					<div id="deductibleSick">UF 0</div>
+					<p class="coverage__list__row__desc">Enfermedades con</p>
+					<p class="coverage__list__row__desc">deducible diferenciado <i data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Descripción del tooltip." class="has-tip top fa fa-info-circle" aria-hidden="true"></i></p>
+					<h3 id="deductibleSick" class="coverage__list__row__title">UF 0</h3>
 				</div>
 			</div>
 		</section>
@@ -38,88 +38,92 @@
 
 		<section class="coverage__features">
 			<div class="row">
-				<div class="columns small-6">
-					<figure>
-						<img src="" alt="">
-						<figcaption>
-							<h3>Coberturas Hospitalarias</h3>
-						</figcaption>
-					</figure>
-					<ul>
-						<li class="row">
-							<div class="columns small-3">
-								<h4>Hasta</h4>
-								<p>100%</p>
-								<h4>De reembolso</h4>
-							</div>
-							<div class="columns small-9">
-								<p>Días cama, Servicios hospitalarios / Medicamentos Hospitalarios, Honorarios médicos quirúrgicos, Prótesis y Órtesis Quirúrgicas, Cirugía dental y Cirugía Plástica Reparadora por accidente, Complicaciones del Embarazo, <span>Servicio de enfermera</span> y <span>Servicio de ambulancia terrestre.</span></p>
-								<p>Drogas antineoplásicas, Drogas Inmunosupresoras para trasplante de órganos, <span>Ambulancia Aérea.</span></p>
-							</div>
-						</li>
-						<li class="row">
-							<div class="columns small-3">
-								<h4>Hasta</h4>
-								<p>100%</p>
-								<h4>De reembolso</h4>
-							</div>
-							<div class="columns small-9">
-								<p>Pacientes Fonasa, si Fonasa no cubra al menos el 50%</p>
-							</div>
-						</li>
-						<li class="row">
-							<div class="columns small-3">
-								<h4>Hasta</h4>
-								<p>100%</p>
-								<h4>De reembolso</h4>
-							</div>
-							<div class="columns small-9">
-								<p>Sin cobertura plan del Sistema Previsional de Salud</p>
-							</div>
-						</li>
-					</ul>
+				<div class="coverage__features__columns columns small-6">
+					<div class="z-depth-3">
+						<figure class="coverage__features__image">
+							<img src="http://media.istockphoto.com/photos/medicine-advice-picture-id518285260" alt="">
+							<figcaption class="coverage__features__image-caption">
+								<h4 class="coverage__features__image__title">Coberturas Hospitalarias</h4>
+							</figcaption>
+						</figure>
+						<ul class="coverage__features__list">
+							<li class="coverage__features__list-item row">
+								<div class="columns small-3">
+									<h4 class="coverage__features__list__title">Hasta</h4>
+									<p class="coverage__features__list__percentage">100%</p>
+									<h4 class="coverage__features__list__title">De reembolso</h4>
+								</div>
+								<div class="columns small-9">
+									<p>Días cama, Servicios hospitalarios / Medicamentos Hospitalarios, Honorarios médicos quirúrgicos, Prótesis y Órtesis Quirúrgicas, Cirugía dental y Cirugía Plástica Reparadora por accidente, Complicaciones del Embarazo, <span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="A tool used for cutting crops.">Servicio de enfermera</span> y <span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="A tool used for cutting crops.">Servicio de ambulancia terrestre.</span></p>
+									<p>Drogas antineoplásicas, Drogas Inmunosupresoras para trasplante de órganos, <span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="A tool used for cutting crops.">Ambulancia Aérea.</span></p>
+								</div>
+							</li>
+							<li class="coverage__features__list-item row align-middle">
+								<div class="columns small-3">
+									<h4 class="coverage__features__list__title">Hasta</h4>
+									<p class="coverage__features__list__percentage">50%</p>
+									<h4 class="coverage__features__list__title">De reembolso</h4>
+								</div>
+								<div class="columns small-9">
+									<p>Pacientes Fonasa, si Fonasa no cubra al menos el 50%</p>
+								</div>
+							</li>
+							<li class="coverage__features__list-item row align-middle">
+								<div class="columns small-3">
+									<h4 class="coverage__features__list__title">Hasta</h4>
+									<p class="coverage__features__list__percentage">20%</p>
+									<h4 class="coverage__features__list__title">De reembolso</h4>
+								</div>
+								<div class="columns small-9">
+									<p>Sin cobertura plan del Sistema Previsional de Salud</p>
+								</div>
+							</li>
+						</ul>
+					</div>
 				</div>
-				<div class="columns small-6">
-					<figure>
-						<img src="" alt="">
-						<figcaption>
-							<h3>Coberturas Ambulatorias</h3>
-						</figcaption>
-					</figure>
-					<ul>
-						<li class="row">
-							<div class="columns small-3">
-								<h4>Hasta</h4>
-								<p>100%</p>
-								<h4>De reembolso</h4>
-							</div>
-							<div class="columns small-9">
-								<p>Cirugía Ambulatoria, Consultas Médicas, Exámenes de Laboratorio, Exámenes Imagenología y Procedimientos de Diagnósticos, Terapéuticos, Kinesiología, Prótesis y Ortesis Ambulatoria</p>
-								<p>Drogas antineoplásicas, Drogas Inmunosupresoras para trasplante de órganos, <span>Ambulancia Aérea.</span></p>
-							</div>
-						</li>
-						<li class="row">
-							<div class="columns small-3">
-								<h4>Hasta</h4>
-								<p>100%</p>
-								<h4>De reembolso</h4>
-							</div>
-							<div class="columns small-9">
-								<p>Pacientes Fonasa, si Fonasa no cubra al menos el 50%</p>
-								<p><a href="">Medicamentos Ambulatorios</a></p>
-							</div>
-						</li>
-						<li class="row">
-							<div class="columns small-3">
-								<h4>Hasta</h4>
-								<p>100%</p>
-								<h4>De reembolso</h4>
-							</div>
-							<div class="columns small-9">
-								<p>Sin cobertura plan del Sistema Previsional de Salud</p>
-							</div>
-						</li>
-					</ul>
+				<div class="coverage__features__columns columns small-6">
+					<div class="z-depth-3">
+						<figure class="coverage__features__image">
+							<img src="http://media.istockphoto.com/photos/scientist-in-laboratory-picture-id499085898" alt="">
+							<figcaption class="coverage__features__image-caption">
+								<h4 class="coverage__features__image__title">Coberturas Ambulatorias</h4>
+							</figcaption>
+						</figure>
+						<ul class="coverage__features__list">
+							<li class="coverage__features__list-item row">
+								<div class="columns small-3">
+									<h4 class="coverage__features__list__title">Hasta</h4>
+									<p class="coverage__features__list__percentage">100%</p>
+									<h4 class="coverage__features__list__title">De reembolso</h4>
+								</div>
+								<div class="columns small-9">
+									<p>Cirugía Ambulatoria, Consultas Médicas, Exámenes de Laboratorio, Exámenes Imagenología y Procedimientos de Diagnósticos, Terapéuticos, Kinesiología, Prótesis y Ortesis Ambulatoria</p>
+									<p>Drogas antineoplásicas, Drogas Inmunosupresoras para trasplante de órganos, <span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="A tool used for cutting crops.">Ambulancia Aérea.</span></p>
+								</div>
+							</li>
+							<li class="coverage__features__list-item row align-middle">
+								<div class="columns small-3">
+									<h4 class="coverage__features__list__title">Hasta</h4>
+									<p class="coverage__features__list__percentage">100%</p>
+									<h4 class="coverage__features__list__title">De reembolso</h4>
+								</div>
+								<div class="columns small-9">
+									<p>Pacientes Fonasa, si Fonasa no cubra al menos el 50%</p>
+									<p><span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="A tool used for cutting crops.">Medicamentos Ambulatorios</span></p>
+								</div>
+							</li>
+							<li class="coverage__features__list-item row align-middle">
+								<div class="columns small-3">
+									<h4 class="coverage__features__list__title">Hasta</h4>
+									<p class="coverage__features__list__percentage">100%</p>
+									<h4 class="coverage__features__list__title">De reembolso</h4>
+								</div>
+								<div class="columns small-9">
+									<p>Sin cobertura plan del Sistema Previsional de Salud</p>
+								</div>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -127,14 +131,11 @@
 		<section class="coverage__more">
 			<div class="row">
 				<div class="columns text-center">
-					<figure>
-						<img src="" alt="">
-						<figcaption>
-							<h3>¿Quieres ampliar tu cobertura</h3>
-							<p>con un seguro complementario desde $33.930?</p>
-							<a href="" class="button large">Amplia tu cobertura</a>
-						</figcaption>
-					</figure>
+					<div class="coverage__more__content">
+						<h3 class="coverage__more__content__title">¿Quieres ampliar tu cobertura</h3>
+						<p class="coverage__more__content__desc">con un seguro complementario desde $33.930?</p>
+						<a href="" class="coverage__more__content__button button large">Amplia tu cobertura</a>
+					</div>
 				</div>
 			</div>
 		</section>

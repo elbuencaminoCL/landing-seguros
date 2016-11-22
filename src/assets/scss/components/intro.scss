@@ -2,19 +2,39 @@
 	.intro {
 		background-image: url( 'http://lorempixel.com/400/200/sports/1/' );
 		background-size: cover;
-		padding: 3rem 0;
+		padding: 3rem 0 0;
+		position: relative;
+		&:before {
+			background: rgba(0,0,0,.2);
+			bottom: 0;
+			content: "";
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
 	}
 
 	.intro__button {
+		margin-bottom: 0;
 		h3,
 		p {
 			margin-bottom: 0;
 		}
-		margin-bottom: 0;
+	}
+
+	.intro__columns {
+		margin: 0 0 0 auto;
+		text-align: center;
+		.heading__title {
+			color: white;
+			line-height: 1;
+		}
 	}
 
 	.intro__header {
 		padding: 3rem 0;
+		position: relative;
 	}
 
 	.intro__content {
@@ -22,14 +42,20 @@
 	}
 
 	.intro__plan {
-		padding: 3rem 0 0 0;
+		padding: 1rem 0;
+		.columns {
+			position: relative;
+		}
 	}
 
 	.intro__plan__description {
-		margin-bottom: 3rem;
+		color: #535548;
+		margin-bottom: 2rem;
 	}
 
 	.intro__plan__sub-title {
+		color: #535548;
+		font-size: 13px;
 		font-weight: bolder;
 		text-transform: uppercase;
 	}

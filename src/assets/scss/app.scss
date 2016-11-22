@@ -4,8 +4,6 @@
 @import 'foundation';
 @import 'motion-ui';
 
-@import 'global/fonts';
-
 @include foundation-global-styles;
 // @include foundation-grid;
 @include foundation-flex-grid;
@@ -51,8 +49,17 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
+
+@import 'global/reset';
+@import 'global/fonts';
+@import 'global/shadow';
 @import 'forms/select';
+@import 'components/button';
 @import 'components/coverage';
 @import 'components/header';
 @import 'components/intro';
 @import 'components/features';
+@import 'components/insurability';
+@import 'components/maps';
+@import 'components/contract';
+@import 'components/footer';

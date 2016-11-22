@@ -1,15 +1,60 @@
 
 	<section class="maps">
 		<div class="maps__row row">
-			<h2 class="maps__title">RED UC CHRISTUS</h2>
-			<a href="">Hospitales y Clínicas</a>
-			<a href="">U. Toma de Muestras</a>
-			<a href="">Centros Médicos</a>
+			<div class="columns small-12 text-center">
+				<h2 class="maps__title heading__title">RED UC CHRISTUS</h2>
+			</div>
+			<div class="columns small-12 text-center">
+				<ul class="maps__tabs__list tabs row align-center" data-tabs id="maps-tabs">
+				  <li class="maps__tabs__list-item tabs-title is-active">
+				  	<a href="#panel1" aria-selected="true">Hospitales y Clínicas</a>
+				  </li>
+				  <li class="maps__tabs__list-item tabs-title">
+				  	<a href="#panel2">U. Toma de Muestras</a>
+				  </li>
+				  <li class="maps__tabs__list-item tabs-title">
+				  	<a href="#panel2">Centros Médicos</a>
+				  </li>
+				</ul>
+			</div>
 		</div>
-		<h2>AQUÍ VA EL MAPA</h2>
-		<div class="maps__doubt">
-			<h3>¿Te queda alguna duda con tu seguro?</h3>
-			<p><a href="">Revisa nuestras preguntas frecuentes</a></p>
-			<p>o Llámanos al +562 2676 7070</p>
+		<div class="tabs-content" data-tabs-content="maps-tabs">
+		  <div class="tabs-panel is-active" id="panel1">
+		    <iframe
+		      width="450"
+		      height="250"
+		      frameborder="0" style="border:0"
+		      src="https://www.google.com/maps/embed/v1/search?key=AIzaSyAX-9LvvKVES7uk_BU_c1S_RUKdB-vl4J4&q=record+stores+in+Seattle" allowfullscreen>
+		    </iframe>
+		  </div>
+		  <div class="tabs-panel" id="panel2">
+		    <iframe
+		      width="450"
+		      height="250"
+		      frameborder="0" style="border:0"
+		      src="https://www.google.com/maps/embed/v1/search?key=AIzaSyAX-9LvvKVES7uk_BU_c1S_RUKdB-vl4J4&q=record+stores+in+Seattle" allowfullscreen>
+		    </iframe>
+		  </div>
+		  <div class="tabs-panel" id="panel3">
+		    <iframe
+		      width="450"
+		      height="250"
+		      frameborder="0" style="border:0"
+		      src="https://www.google.com/maps/embed/v1/search?key=AIzaSyAX-9LvvKVES7uk_BU_c1S_RUKdB-vl4J4&q=record+stores+in+Seattle" allowfullscreen>
+		    </iframe>
+		  </div>
+		</div>
+		<div class="maps__doubt text-center">
+			<h3 class="maps__doubt__title">¿Te queda alguna duda con tu seguro?</h3>
+			<h3 class="maps__doubt__desc"><a data-open="modalFaq">Revisa nuestras preguntas frecuentes</a></h3>
+			<h3 class="maps__doubt__desc">o Llámanos al +562 2676 7070</h3>
+		</div>
+		<div class="reveal" id="modalFaq" data-reveal>
+		  <h1>Awesome. I Have It.</h1>
+		  <p class="lead">Your couch. It is mine.</p>
+		  <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+		  <button class="close-button" data-close aria-label="Close modal" type="button">
+		    <span aria-hidden="true">&times;</span>
+		  </button>
 		</div>
 	</section>

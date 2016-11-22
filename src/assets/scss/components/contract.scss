@@ -1,0 +1,35 @@
+
+	.contract {
+		background-color: #cddbe6;
+		padding: 6rem 0;
+	}
+
+	.contract__desc {
+		margin-bottom: 3rem;
+	}
+
+	.contract__sub-title {
+		color: #545557;
+		font-size: 16px;
+		font-weight: bolder;
+		line-height: 1.2;
+		text-transform: uppercase;
+	}
+
+	.intro__price__title {
+		color: #575759;
+		font-size: 18px;
+		font-weight: normal;
+		line-height: 1.2;
+		padding-left: 36px;
+	}
+
+	.intro__price__sub-amount {
+		color: #575759;
+	}
+
+	.contract__price__button {
+		p {
+			margin-bottom: 0;
+		}
+	}
