@@ -47,7 +47,6 @@
 	})
 
 	$secure.add( $secure2 ).on('change',( e ) => {
-		// console.log("PROBANDO", e);
 
 		if( $secure.add( $secure2 ).val() == 'secureMayorMore' ) {
 
