@@ -1,8 +1,17 @@
 
+	.map {
+	  width: 100%;
+	  height: 400px;
+	  background-color: grey;
+	}
+
 	.maps {
 		padding: 6rem 0 0;
 		.tabs {
 			border: 0;
+		}
+		.tabs-panel {
+			padding: 0;
 		}
 		.tabs-title {
 			float: none;
