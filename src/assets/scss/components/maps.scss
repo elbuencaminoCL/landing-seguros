@@ -1,7 +1,7 @@
 
 	.map {
 	  width: 100%;
-	  height: 400px;
+	  height: 605px;
 	  background-color: grey;
 	}
 
@@ -40,6 +40,49 @@
 			border-bottom: 1px solid white;
 			color: white;
 			padding-bottom: .4rem;
+		}
+	}
+
+	.maps__main {
+		position: relative;
+	}
+
+	.maps__main__menu {
+		background-color: #3c6eb2;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 332px;
+		z-index: 1;
+		li {
+			list-style: none;
+			a {
+				border-bottom: 1px solid #9eb7d9;
+				color: #fff;
+				display: block;
+				font-size: 12px;
+				padding: 5px 20px;
+				&:hover {
+					background-color: #8c53a1;
+				}
+			}
+		}
+		.close {
+			color: white;
+			cursor: pointer;
+			padding: 2px 5px;
+			position: absolute;
+			right: 10px;
+			top: 10px;
+		}
+		.content {
+			display: none;
+		}
+		.titulo {
+	    color: #fff;
+	    font-size: 26px;
+	    padding: 20px;
+	    position: relative;
 		}
 	}
 
