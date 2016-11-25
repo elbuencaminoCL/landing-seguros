@@ -29,6 +29,9 @@
 		.heading__title {
 			color: white;
 			line-height: 1;
+			&:first-of-type {
+				letter-spacing: -2px;
+			}
 		}
 		.heading__sub-title {
 			color: white;
@@ -41,7 +44,7 @@
 	}
 
 	.intro__header {
-		padding: 3rem 0;
+		padding: 3rem 0 9rem;
 		position: relative;
 	}
 
