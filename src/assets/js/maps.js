@@ -38,8 +38,6 @@
 
 
     function showMap( title, ubication, latitude, longitude, type, pic ) {
-        console.log( $( this ) );
-
         let ubicationPosition = { lat: parseFloat(latitude), lng: parseFloat(longitude) };
 
         let map = new google.maps.Map(document.getElementById('map'), {

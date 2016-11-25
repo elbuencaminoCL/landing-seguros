@@ -89,19 +89,26 @@
 	}
 
 	.loading {
+		bottom: 0;
 		display: none;
+		left: 0;
 		opacity: 0;
 		padding-top: 3rem;
+		position: fixed;
+		right: 0;
+		top: 0;
 		visibility: hidden;
 		&.animate {
 			display: block;
 			opacity: 1;
-			position: relative;
 			visibility: visible;
 			z-index: 10;
 		}
 		h3 {
 			color: white;
+			font-weight: bolder;
+			letter-spacing: -1px;
+			margin-top: 3rem;
 			text-transform: uppercase;
 		}
 	}
