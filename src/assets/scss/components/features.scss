@@ -24,6 +24,15 @@
 		margin: 0;
 	}
 
+	.features__list {
+		.features__list {
+			margin-top: 1rem;
+			.bullet-list {
+				margin-bottom: 0;
+			}
+		}
+	}
+
 	.features__main {
 		padding: 3rem 0;
 		li {

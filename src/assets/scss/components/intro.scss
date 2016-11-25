@@ -62,6 +62,9 @@
 	.intro__plan__description {
 		color: #535548;
 		margin-bottom: 2rem;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
 	}
 
 	.intro__plan__sub-title {
@@ -80,10 +83,22 @@
 		font-size: 70px;
 		font-weight: bolder;
 		line-height: 1;
+		padding-left: 165px;
 		margin-bottom: 0;
 		span {
 			font-size: 35px;
 		}
+		.intro__price__second-amount {
+			color: #333;
+			font-size: 20px;
+			font-weight: 400;
+		}
+	}
+
+	.intro__price__sub-title {
+		color: #5d7aa2;
+		font-size: 22px;
+		text-transform: uppercase;
 	}
 
 	.intro__price__sub-amount {

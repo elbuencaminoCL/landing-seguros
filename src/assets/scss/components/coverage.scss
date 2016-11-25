@@ -75,6 +75,12 @@
 		text-transform: uppercase;
 	}
 
+	.coverage__intro {
+		.secureDate {
+			max-width: 300px;
+		}
+	}
+
 	.coverage__intro__date {
 		margin-bottom: 1rem;
 		margin-top: 3rem;
