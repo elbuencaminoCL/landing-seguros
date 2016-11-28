@@ -34,7 +34,7 @@
 	.maps__doubt {
 		background-color: #2b77c5;
 		color: white;
-		padding: 3rem 0;
+		padding: 1rem 0;
 	}
 
 	.maps__doubt__desc {
@@ -42,6 +42,13 @@
 			border-bottom: 1px solid white;
 			color: white;
 			padding-bottom: .4rem;
+		}
+	}
+
+	.maps__tabs__list-item {
+		border-right: 1px solid white;
+		&:last-of-type {
+			border-right: 0;
 		}
 	}
 

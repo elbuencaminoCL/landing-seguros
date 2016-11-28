@@ -7,24 +7,64 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="columns small-4">
+			<div class="columns small-12 medium-6">
 				<h4 class="contract__sub-title">Tipo de seguro</h4>
 				<select name="" id="secure2" class="secure">
 					<option value="secureMayor">Seguro gasto médico mayor</option>
 					<option value="secureMayorMore">Seguro gasto médico mayor + Complementario</option>
 				</select>
 			</div>
-			<div class="columns small-4">
+			<div class="columns small-12 medium-6">
 				<h4 class="contract__sub-title">Cantidad de asegurados:</h4>
 				<select name="" id="secureCan2" class="secureCan">
-					<option value="titular1" data-uf18="0.40" data-uf65="0.52" data-uf70="0.57" data-uf81="0.63" data-uf90="1.03">Titular sin asegurados dependientes</option>
-					<option value="titular2" data-uf18="0.69" data-uf65="0.90" data-uf70="0.99" data-uf81="1.16" data-uf90="1.82">Titular más un asegurado dependiente</option>
-					<option value="titular3" data-uf18="0.85" data-uf65="1.12" data-uf70="1.24" data-uf81="1.44" data-uf90="2.27">Titular más dos asegurados dependientes</option>
-					<option value="titular4" data-uf18="0.97" data-uf65="1.28" data-uf70="1.42" data-uf81="1.64" data-uf90="2.61">Titular más tres asegurados dependientes</option>
-					<option value="titular5" data-uf18="1.12" data-uf65="1.90" data-uf70="1.99" data-uf81="2.16" data-uf90="2.82">Titular más cuatro asegurados dependientes</option>
+					<option value="titular1"
+							data-uf18="0.40"
+							data-uf65="0.52"
+							data-uf70="0.57"
+							data-uf81="0.63"
+							data-uf90="1.03"
+							data-more-uf18="1.29">
+							Titular sin asegurados dependientes
+					</option>
+					<option value="titular2"
+							data-uf18="0.69"
+							data-uf65="0.90"
+							data-uf70="0.99"
+							data-uf81="1.16"
+							data-uf90="1.82"
+							data-more-uf18="2.13">
+							Titular más un asegurado dependiente
+					</option>
+					<option value="titular3"
+							data-uf18="0.85"
+							data-uf65="1.12"
+							data-uf70="1.24"
+							data-uf81="1.44"
+							data-uf90="2.27"
+							data-more-uf18="2.56">
+							Titular más dos asegurados dependientes
+					</option>
+					<option value="titular4"
+							data-uf18="0.97"
+							data-uf65="1.28"
+							data-uf70="1.42"
+							data-uf81="1.64"
+							data-uf90="2.61"
+							data-more-uf18="2.87">
+							Titular más tres asegurados dependientes
+					</option>
+					<option value="titular5"
+							data-uf18="1.12"
+							data-uf65="1.90"
+							data-uf70="1.99"
+							data-uf81="2.16"
+							data-uf90="2.82"
+							data-more-uf18="3.13">
+							Titular más cuatro asegurados dependientes
+					</option>
 				</select>
 			</div>
-			<div class="columns small-4">
+			<div class="columns small-12 medium-6">
 				<h4 class="contract__sub-title">Edad del asegurado de mayor edad:</h4>
 				<select name="" id="secureDate3" class="secureDate">
 					<option value="18">Entre 18 y 64 años</option>
@@ -39,9 +79,12 @@
 		<div class="row">
 			<div class="columns text-center">
 				<div class="intro__price__plan">
+					<figure class="contract__price__plan__image">
+						<img src="{{root}}/assets/img/month-free.png" alt="Meses gratis">
+					</figure>
 					<h3 class="intro__price__title">Precio de tu plan</h3>
-					<p class="intro__price__amount"><span>$</span><span class="pricePeso"></span> <span class="intro__price__second-amount">UF <span class="intro__price__second-amount priceUF"></span> / MES</span></p>
-					<p class="intro__price__sub-title">Ahorras: $ 99.456</p>
+					<p class="intro__price__amount"><span class="price-peso">$ <span class="pricePeso"></span></span><span class="intro__price__second-amount">UF <span class="intro__price__second-amount priceUF"></span> / MES</span></p>
+					<p class="intro__price__sub-title">Puedes ahorrar: $ 33.185</p>
 				</div>
 			</div>
 			<div class="columns small-12 text-center">
@@ -54,7 +97,7 @@
 
 
 
-		<div class="row">
+		<div class="row contract__features">
 			<div class="columns">
 				<ul class="contract__list">
 					<li class="contract__list-item bullet-list">

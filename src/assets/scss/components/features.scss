@@ -51,9 +51,18 @@
 	}
 
 	.features__umbrella {
-		margin-top: 2rem;
+		font-size: 18px;
+		margin-bottom: 0;
 		i {
 			color: #6fabe7;
+		}
+	}
+
+	.features__umbrella__row {
+		margin: 2rem 0;
+		text-align: center;
+		.columns {
+			padding: 0;
 		}
 	}
 
@@ -179,4 +188,11 @@
 	.parallax-window {
     min-height: 700px;
     background: transparent;
+	}
+
+	@media screen and ( min-width: 40em ) {
+		.features__umbrella__row {
+			margin: 0;
+			text-align: left;
+		}
 	}

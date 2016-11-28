@@ -36,7 +36,15 @@
 	}
 
 	.coverage__features__list {
-		background-color: #e6e6e6;
+		background-image: -webkit-gradient(
+			linear,
+			left top,
+			left bottom,
+			color-stop(0, #D7D7D7),
+			color-stop(1, #FFFFFF)
+		);
+		background-image: linear-gradient(to top, #D7D7D7 0%, #FFFFFF 100%);
+		border: 1px solid #989898;
 		padding: 1rem .9rem;
 	}
 
@@ -81,7 +89,7 @@
 
 	.coverage__intro {
 		.secureDate {
-			max-width: 300px;
+			margin-bottom: 5rem;
 		}
 	}
 
@@ -102,8 +110,30 @@
 		margin-bottom: 3rem;
 	}
 
+	.coverage__list__sub-row {
+		margin-bottom: 2rem;
+		.columns {
+			&:first-of-type {
+				text-align: left;
+			}
+			&:last-of-type {
+				text-align: right;
+			}
+		}
+		.coverage__list__row__title {
+			font-size: 32px;
+		}
+	}
+
 	.coverage__list__row {
-		background-color: #ededed;
+		background-image: -webkit-gradient(
+			linear,
+			left top,
+			left bottom,
+			color-stop(0, #D7D7D7),
+			color-stop(1, #FFFFFF)
+		);
+		background-image: linear-gradient(to top, #D7D7D7 0%, #FFFFFF 100%);
 		border-radius: 6px;
 		border: 1px solid #989898;
 		color: #2c75c2;
@@ -121,9 +151,7 @@
 	}
 
 	.coverage__more {
-		background-image: url( 'http://media.istockphoto.com/photos/cute-expecting-couple-kissing-picture-id500399342' );
-		background-position: bottom center;
-		background-size: cover;
+		border-bottom: 4px solid #2f78c7;
 		position: relative;
 		&:before {
 			background-color: rgba( 164,124,177,.7 );
@@ -150,13 +178,41 @@
 		margin-bottom: 0;
 	}
 
-	@media screen and ( min-width: 48em ) {
+	@media screen and ( min-width: 40em ) {
+
+		.coverage__intro {
+			.secureDate {
+				max-width: 300px;
+			}
+		}
+
 		.coverage__features__list {
 			min-height: 496px;
 		}
 
 		.coverage__list__row {
 			max-width: 800px;
+		}
+
+		.coverage__list__sub-row {
+			margin-bottom: 0;
+		}
+
+
+		.coverage__list__sub-row {
+			.columns {
+				&:first-of-type {
+					text-align: initial;
+				}
+				&:last-of-type {
+					text-align: initial;
+				}
+			}
+		}
+		.coverage__more {
+			background-image: url( 'http://media.istockphoto.com/photos/cute-expecting-couple-kissing-picture-id500399342' );
+			background-position: bottom center;
+			background-size: cover;
 		}
 
 	}

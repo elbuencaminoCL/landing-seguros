@@ -9,6 +9,19 @@
 		margin-bottom: 3rem;
 	}
 
+	.contract__price__button {
+		p {
+			margin-bottom: 0;
+		}
+		h3 {
+			margin-bottom: 0;
+		}
+	}
+
+	.contract__price__plan__image {
+		margin-bottom: 3rem;
+	}
+
 	.contract__sub-title {
 		color: #545557;
 		font-size: 16px;
@@ -29,11 +42,22 @@
 		color: #575759;
 	}
 
-	.contract__price__button {
-		p {
-			margin-bottom: 0;
+
+	@media screen and ( min-width: 40em ) {
+		.contract__features {
+			margin-top: 3rem;
 		}
-		h3 {
-			margin-bottom: 0;
+
+		.contract__price__plan__image {
+			height: 154px;
+			margin: 0 auto;
+			max-width: 500px;
+			position: relative;
+			img {
+				max-width: 160px;
+				position: absolute;
+				right: 0;
+				top: 40px;
+			}
 		}
 	}

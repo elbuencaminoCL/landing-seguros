@@ -21,4 +21,11 @@
 			top: 10px;
 			width: 8px;
 		}
+		ul li {
+			&:before {
+				background-color: #A5C5ED;
+				height: 6px;
+				width: 6px;
+			}
+		}
 	}
