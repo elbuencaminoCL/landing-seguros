@@ -3,6 +3,7 @@
 		margin: 3rem 0;
 	}
 
+
 	.coverage__features__image {
 		position: relative;
 		&:before {
@@ -68,6 +69,24 @@
 			border-bottom: 0;
 		}
 	}
+
+	.coverage__features__columns {
+		.accordion-title {
+			border: 0;
+			border-bottom: 4px solid #4272a2;
+			color: #4272a2;
+			font-size: 18px;
+			font-weight: bolder;
+			line-height: 1;
+			padding: 10px;
+			text-transform: uppercase;
+			img {
+				margin-bottom: 12px;
+				max-width: 40px;
+			}
+		}
+	}
+
 
 	.coverage__features__list__percentage {
 		color: #2d76c5;
@@ -178,11 +197,21 @@
 		margin-bottom: 0;
 	}
 
+	.coverage__features__tab-content {
+		display: none;
+	}
+
 	@media screen and ( min-width: 40em ) {
 
 		.coverage__intro {
 			.secureDate {
 				max-width: 300px;
+			}
+		}
+
+		.coverage__features__columns {
+			.accordion-title {
+				display: none;
 			}
 		}
 
@@ -209,6 +238,15 @@
 				}
 			}
 		}
+
+		.coverage__features__columns {
+			.coverage__features__tab-content {
+				display: block;
+			}
+		}
+
+
+
 		.coverage__more {
 			background-image: url( 'http://media.istockphoto.com/photos/cute-expecting-couple-kissing-picture-id500399342' );
 			background-position: bottom center;
