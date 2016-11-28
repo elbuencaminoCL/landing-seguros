@@ -21,6 +21,10 @@
 		left: 0;
 		position: absolute;
 		right: 0;
+		text-align: center;
+	}
+	.coverage__features__image-caption img {
+		margin-bottom: 10px;
 	}
 
 	.coverage__features__image__title {
@@ -117,8 +121,8 @@
 	}
 
 	.coverage__more {
-		background-image: url( 'http://media.istockphoto.com/photos/handicap-patient-at-the-hospital-picture-id510392946' );
-		background-position: center center;
+		background-image: url( 'http://media.istockphoto.com/photos/cute-expecting-couple-kissing-picture-id500399342' );
+		background-position: bottom center;
 		background-size: cover;
 		position: relative;
 		&:before {

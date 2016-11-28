@@ -58,7 +58,7 @@ $foundation-palette: (
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
-$black: #333;
+$black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black;
@@ -68,7 +68,7 @@ $global-margin: 1rem;
 $global-padding: 1rem;
 $global-weight-normal: normal;
 $global-weight-bold: bold;
-$global-radius: 6px;
+$global-radius: 0;
 $global-text-direction: ltr;
 $global-flexbox: false;
 $print-transparent-backgrounds: true;
@@ -117,9 +117,9 @@ $header-sizes: (
   ),
   medium: (
     'h1': 48,
-    'h2': 32,
-    'h3': 26,
-    'h4': 22,
+    'h2': 40,
+    'h3': 31,
+    'h4': 25,
     'h5': 20,
     'h6': 16,
   ),
@@ -236,7 +236,7 @@ $breadcrumbs-item-slash: true;
 $button-padding: 0.85em 1em;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
-$button-background: #744385;
+$button-background: $primary-color;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: $white;
 $button-color-alt: $black;

@@ -1,8 +1,8 @@
 
 	.intro {
-		background-image: url( '../img/banner.jpg' );
+		background-image: url( '../img/iStock-535851115.jpg' );
 		background-size: cover;
-		padding: 3rem 0 0;
+		padding: 4rem 0 0;
 		position: relative;
 		&:before {
 			background: rgba(0,0,0,.2);
@@ -17,8 +17,9 @@
 
 	.intro__button {
 		margin-bottom: 0;
-		h3,
-		p {
+		h3{
+			font-weight: 900;
+			size: 24px;
 			margin-bottom: 0;
 		}
 	}
@@ -29,15 +30,17 @@
 		.heading__title {
 			color: white;
 			line-height: 1;
+			font-size: 40px;
 			&:first-of-type {
 				letter-spacing: -2px;
 			}
 		}
 		.heading__sub-title {
 			color: white;
-			font-size: 26px;
-			line-height: 1.2;
-			margin-bottom: 1rem;
+			font-size: 24px;
+			font-weight: 400;
+			line-height: 0.9;
+			margin-bottom: 0.5rem;
 			text-transform: uppercase;
 		}
 	}
@@ -55,6 +58,11 @@
 		padding: 1rem 0;
 		.columns {
 			position: relative;
+			padding-bottom: 1rem;
+		}
+		h6{
+			text-align: right;
+			color: $black;
 		}
 	}
 
@@ -74,7 +82,7 @@
 	}
 
 	.intro__price {
-		padding: 3rem 0;
+		padding: 1rem 0;
 	}
 
 	.intro__price__amount {
@@ -82,22 +90,25 @@
 		font-size: 70px;
 		font-weight: bolder;
 		line-height: 1;
-		padding-left: 165px;
+		padding-left: 50px;
 		margin-bottom: 0;
-		span {
+		.price-peso {
 			font-size: 35px;
 		}
 		.intro__price__second-amount {
 			color: #333;
-			font-size: 20px;
-			font-weight: 400;
+			font-size: 18px;
+			font-weight: 600;
 		}
 	}
 
 	.intro__price__sub-title {
-		color: #5d7aa2;
-		font-size: 22px;
+		color: #4F7CBA;
+		font-size: 20px;
 		text-transform: uppercase;
+		text-align: center;
+		font-weight: 500;
+		padding-left: 40px;
 	}
 
 	.intro__price__sub-amount {
@@ -107,7 +118,19 @@
 	.intro__price__title {
 		font-weight: bold;
 		margin-bottom: 0;
+		margin-left: -66px;
 		text-transform: uppercase;
+	}
+	.contract__price__button  h3{
+		font-size: 24px;
+		font-weight: 900;
+		margin: 0 50px;
+		line-height: 1.2;
+	}
+	.contract__price__button em{
+		font-weight: 400;
+		margin: 10px 0 0 0;
+		text-transform: none;
 	}
 
 	@media screen and ( min-width: 48em ) {
