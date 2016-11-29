@@ -18,6 +18,9 @@
 
 	.features__header {
 		position: relative;
+		.hide {
+			display: none;
+		}
 	}
 
 	.features__header__image {
