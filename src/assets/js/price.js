@@ -9,15 +9,13 @@
 	let $deductibleSick = $( '#deductibleSick' );
 	let UF;
 	let $pricePeso = $('.pricePeso');
-	let $priceUF = $('.priceUF')
+	let $priceUF = $('.priceUF');
+	let $priceSave = $('.priceSave');
 
 	const ufValuePeso = 26304.77;
 
 	if( $selectSecure.val() == 'secureMayor' ) {
 		secureMayorFn();
-	}
-	else if( $selectSecure.val() == 'secureMayorMore' ) {
-		secureMayorMoreFn();
 	}
 
 	$selectSecure.add( $selectSecureCan ).add( $selectSecureDate ).add( $selectSecureDateCoverage ).on( 'change', () => {
@@ -49,9 +47,13 @@
 		$.each( $selectSecureDateCoverage, ( k, v ) => {
 
 			let $valueSecureCvDate = $( v ).val();
-			let $valueDataCvUf = $( $selectSecureCan ).find(':selected').data('uf' + $valueSecureCvDate);
+			let $valueDataCvUf = $( $capital ).data('cvuf' + $valueSecureCvDate);
+			let $valueDataDcUf = $( $deductible ).data('cvuf' + $valueSecureCvDate);
+			let $valueDataDcSickUf = $( $deductibleSick ).data('cvuf' + $valueSecureCvDate);
 
 			totalPriceCv( $valueDataCvUf );
+			totalPriceDc( $valueDataDcUf );
+			totalPriceDcSick( $valueDataDcSickUf );
 
 		})
 
@@ -70,13 +72,20 @@
 		$.each( $selectSecureDateCoverage, ( k, v ) => {
 
 			let $valueSecureCvDate = $( v ).val();
-			let $valueDataCvUf = $( $selectSecureCan ).find(':selected').data('more-uf' + $valueSecureCvDate);
-
-			console.log( $valueDataCvUf );
+			let $valueDataCvUf = $( $capital ).data('cvuf' + $valueSecureCvDate);
+			let $valueDataDcUf = $( $deductible ).data('cvuf' + $valueSecureCvDate);
+			let $valueDataDcSickUf = $( $deductibleSick ).data('cvuf' + $valueSecureCvDate);
 
 			totalPriceCv( $valueDataCvUf );
+			totalPriceDc( $valueDataDcUf );
+			totalPriceDcSick( $valueDataDcSickUf );
 
 		})
+
+		let $priceMorePeso = $( $pricePeso ).html();
+		console.log( $priceMorePeso );
+
+		$priceSave.html( parseFloat( $priceMorePeso * 3 ).toFixed( 3 ) );
 	}
 
 	function totalPrice( UF ) {
@@ -87,6 +96,24 @@
 
 	function totalPriceCv( CvUf ) {
 		let totalPeso = CvUf;
-		console.log( totalPeso );
-		$capital.html( addCommas( parseFloat( totalPeso ).toFixed(2) ) );
+		$capital.html( addCommas( parseInt( totalPeso ) ) );
+
+		if( totalPeso % 1 != 0 ) {
+			$capital.html( parseFloat( totalPeso ).toFixed(2) );
+		}
+
+	}
+
+	function totalPriceDc( CvUf ) {
+		let totalPeso = CvUf;
+		$deductible.html( addCommas( parseInt( totalPeso ) ) );
+
+		if( totalPeso % 1 != 0 ) {
+			$deductible.html( parseFloat( totalPeso ).toFixed(2) );
+		}
+
+	}
+
+	function totalPriceDcSick( Message ) {
+		$deductibleSick.html( Message );
 	}

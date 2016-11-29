@@ -8,12 +8,12 @@
 					<p class="coverage__intro__description">coberturas cuéntanos primero:</p>
 					<p class="coverage__intro__date"><em>¿Qué edad tienes?</em></p>
 					<select name="" id="secureDate2" class="secureDateCoverage">
-						<option value="1865">18 años hasta cumplir 65 años</option>
 						<option value="18">18 años hasta cumplir 50 años</option>
 						<option value="50">50 años hasta cumplir 70 años</option>
 						<option value="70">70 años hasta cumplir 81 años</option>
 						<option value="81">81 años hasta cumplir 90 años</option>
 						<option value="90">90 años hasta cumplir 100 años</option>
+						<option value="1865">18 años hasta cumplir 65 años</option>
 					</select>
 				</div>
 			</div>
@@ -22,41 +22,58 @@
 
 		<section class="coverage__list">
 			<div class="coverage__list__row row text-center align-bottom">
-				<div class="columns small-12 medium-4">
+				<div class="columns small-12 medium-3">
 					<div class="row coverage__list__sub-row align-middle">
 						<div class="columns small-6 medium-12">
 							<p class="coverage__list__row__desc">Capital</p>
 							<p class="coverage__list__row__desc">Asegurado</p>
 						</div>
 						<div class="columns small-6 medium-12">
-							<h3 id="capital" class="coverage__list__row__title"
-								data-cvuf1865="0.060"
-								data-cvuf18="36.000"
-								data-cvuf50="36.000"
-								data-cvuf70="3.500"
-								data-cvuf81="3.500"
-								data-cvuf90="3.500">UF 36.000</h3>
+							<h3 class="coverage__list__row__title">UF
+								<span id="capital"
+									data-cvuf18="36000"
+									data-cvuf50="36000"
+									data-cvuf70="3500"
+									data-cvuf81="3500"
+									data-cvuf90="3500"
+									data-cvuf1865="0.06"></span>
+							</h3>
 						</div>
 					</div>
 				</div>
-				<div class="columns small-12 medium-4">
+				<div class="columns small-12 medium-3">
 					<div class="row coverage__list__sub-row align-middle">
 						<div class="columns small-6 medium-12">
 							<p class="coverage__list__row__desc">Deducible</p>
 						</div>
 						<div class="columns small-6 medium-12">
-							<h3 id="deductible" class="coverage__list__row__title">UF 60</h3>
+							<h3 class="coverage__list__row__title">UF
+								<span id="deductible"
+									data-cvuf18="60"
+									data-cvuf50="60"
+									data-cvuf70="200"
+									data-cvuf81="300"
+									data-cvuf90="400"
+									data-cvuf1865="2"></span>
+							</h3>
 						</div>
 					</div>
 				</div>
-				<div class="columns small-12 medium-4">
+				<div class="columns small-12 medium-6">
 					<div class="row coverage__list__sub-row align-middle">
 						<div class="columns small-6 medium-12">
 							<p class="coverage__list__row__desc">Enfermedades con</p>
 							<p class="coverage__list__row__desc">deducible diferenciado <i data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Descripción del tooltip." class="has-tip top fa fa-info-circle" aria-hidden="true"></i></p>
 						</div>
 						<div class="columns small-6 medium-12">
-							<h3 id="deductibleSick" class="coverage__list__row__title">UF 0</h3>
+							<h3 class="coverage__list__row__title">
+								<span id="deductibleSick"
+									data-cvuf18="Sin deducible"
+									data-cvuf50="Todas con deducible"
+									data-cvuf70="Todas con deducible"
+									data-cvuf81="Todas con deducible"
+									data-cvuf90="Todas con deducible"></span>
+							</h3>
 						</div>
 					</div>
 				</div>

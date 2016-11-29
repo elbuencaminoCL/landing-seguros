@@ -31,6 +31,14 @@
 		selectFn();
 	})
 
+	if( $secure.add( $secure2 ).val() == 'secureMayor' ) {
+		$secureDateOption2.each( function () {
+			if( $( this ).val() == '1865' ) {
+				$( this ).attr('disabled', true);
+			}
+		})
+	}
+
 	$secure.add( $secure2 ).on('change', ( e ) => {
 
 		if( $secure.add( $secure2 ).val() == 'secureMayorMore' ) {
@@ -42,11 +50,13 @@
 					$( this ).attr('disabled', false);
 				}
 			})
-
 		}
 		else {
 			$secureDateOption2.each( function () {
 				$(this ).attr('disabled', false);
+				if( $( this ).val() == '1865' ) {
+					$( this ).attr('disabled', true);
+				}
 			})
 		}
 	});
