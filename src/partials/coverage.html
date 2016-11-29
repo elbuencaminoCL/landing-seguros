@@ -1,5 +1,5 @@
 
-	<section class="coverage">
+	<section class="coverage" id="coverage" data-magellan-target="coverage">
 		<section class="coverage__intro">
 			<div class="row">
 				<div class="columns text-center">
@@ -7,12 +7,13 @@
 					<p class="coverage__intro__description">Las coberturas dependen de la edad del asegurado y del plan seleccionado. Para conocer cuáles son tus</p>
 					<p class="coverage__intro__description">coberturas cuéntanos primero:</p>
 					<p class="coverage__intro__date"><em>¿Qué edad tienes?</em></p>
-					<select name="" id="secureDate2" class="secureDate">
-						<option value="18">Entre 18 y 64 años</option>
-						<option value="65">Entre 65 y 69 años</option>
-						<option value="70">Entre 70 y 80 años</option>
-						<option value="81">Entre 81 y 89 años</option>
-						<option value="90">90 años hasta cumplir 100</option>
+					<select name="" id="secureDate2" class="secureDateCoverage">
+						<option value="1865">18 años hasta cumplir 65 años</option>
+						<option value="18">18 años hasta cumplir 50 años</option>
+						<option value="50">50 años hasta cumplir 70 años</option>
+						<option value="70">70 años hasta cumplir 81 años</option>
+						<option value="81">81 años hasta cumplir 90 años</option>
+						<option value="90">90 años hasta cumplir 100 años</option>
 					</select>
 				</div>
 			</div>
@@ -28,7 +29,13 @@
 							<p class="coverage__list__row__desc">Asegurado</p>
 						</div>
 						<div class="columns small-6 medium-12">
-							<h3 id="capital" class="coverage__list__row__title">UF 36.000</h3>
+							<h3 id="capital" class="coverage__list__row__title"
+								data-cvuf1865="0.060"
+								data-cvuf18="36.000"
+								data-cvuf50="36.000"
+								data-cvuf70="3.500"
+								data-cvuf81="3.500"
+								data-cvuf90="3.500">UF 36.000</h3>
 						</div>
 					</div>
 				</div>

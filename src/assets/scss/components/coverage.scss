@@ -107,7 +107,7 @@
 	}
 
 	.coverage__intro {
-		.secureDate {
+		.secureDateCoverage {
 			margin-bottom: 5rem;
 		}
 	}
@@ -123,10 +123,6 @@
 
 	.coverage__intro__select {
 		max-width: 400px;
-	}
-
-	.coverage__intro__title {
-		margin-bottom: 3rem;
 	}
 
 	.coverage__list__sub-row {
@@ -203,8 +199,12 @@
 
 	@media screen and ( min-width: 40em ) {
 
+		.coverage {
+			padding: 3rem 0;
+		}
+
 		.coverage__intro {
-			.secureDate {
+			.secureDateCoverage {
 				max-width: 300px;
 			}
 		}

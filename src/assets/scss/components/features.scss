@@ -195,4 +195,14 @@
 			margin: 0;
 			text-align: left;
 		}
+
+		.features__header {
+			.columns {
+				&:last-of-type {
+					img {
+						max-width: 460px;
+					}
+				}
+			}
+		}
 	}
