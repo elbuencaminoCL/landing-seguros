@@ -31,6 +31,12 @@
 		else if( $selectSecureVal == 'secureMayorMore' ) {
 			secureMayorMoreFn();
 		}
+
+		if( isNaN( $capital.html() ) || isNaN( $capital.html() ) ) {
+			$capital.html( '' );
+			$deductible.html( '' );
+		}
+
 	}
 
 	function secureMayorFn() {
@@ -96,6 +102,7 @@
 
 	function totalPriceCv( CvUf ) {
 		let totalPeso = CvUf;
+
 		$capital.html( addCommas( parseInt( totalPeso ) ) );
 
 		if( totalPeso % 1 != 0 ) {
