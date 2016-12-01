@@ -71,6 +71,10 @@
 
 		})
 
+		let $priceMorePeso = $( $pricePeso ).html();
+
+		$priceSave.html( parseFloat( $priceMorePeso * 3 ).toFixed( 3 ) );
+
 	}
 
 	function secureMayorMoreFn() {
@@ -97,7 +101,6 @@
 		})
 
 		let $priceMorePeso = $( $pricePeso ).html();
-		console.log( $priceMorePeso );
 
 		$priceSave.html( parseFloat( $priceMorePeso * 3 ).toFixed( 3 ) );
 	}
