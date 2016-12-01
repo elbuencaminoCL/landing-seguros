@@ -1,6 +1,19 @@
 
 	.coverage__features {
-		margin: 3rem 0;
+		margin: 3rem 0 0;
+	}
+
+	.coverage__features__footer {
+		margin-bottom: 3rem;
+	}
+
+	.changeCoverageMore.coverage__features {
+		margin-bottom: 0;
+	}
+
+
+	.coverage__features__title {
+		margin-bottom: 3rem;
 	}
 
 
@@ -166,7 +179,6 @@
 	}
 
 	.coverage__more {
-		border-bottom: 4px solid #2f78c7;
 		position: relative;
 		&:before {
 			background-color: rgba( 164,124,177,.7 );
@@ -200,7 +212,7 @@
 	@media screen and ( min-width: 40em ) {
 
 		.coverage {
-			padding: 3rem 0;
+			padding: 3rem 0 0;
 		}
 
 		.coverage__intro {
