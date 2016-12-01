@@ -71,6 +71,11 @@
 
 		})
 
+		let $priceMorePeso = $( $pricePeso ).html();
+		let unFormat = numeral().set($priceMorePeso).value();
+
+		$priceSave.html( parseFloat(unFormat * 3).toFixed(3) );
+
 	}
 
 	function secureMayorMoreFn() {
@@ -97,21 +102,21 @@
 		})
 
 		let $priceMorePeso = $( $pricePeso ).html();
-		console.log( $priceMorePeso );
+		let unFormat = numeral().set($priceMorePeso).value();
 
-		$priceSave.html( parseFloat( $priceMorePeso * 3 ).toFixed( 3 ) );
+		$priceSave.html( parseFloat(unFormat * 3).toFixed(3) );
 	}
 
 	function totalPrice( UF ) {
 		let totalPeso = UF * ufValuePeso;
-		$pricePeso.html( addCommas( parseInt( totalPeso ) ) );
-		$priceUF.html( addCommas( parseFloat( UF ).toFixed(2) ) );
+		$pricePeso.html( addInteger( totalPeso) );
+		$priceUF.html( addDecimal( UF ) );
 	}
 
 	function totalPriceCv( CvUf ) {
 		let totalPeso = CvUf;
 
-		$capital.html( addCommas( parseInt( totalPeso ) ) );
+		$capital.html( addInteger( totalPeso ) );
 
 		if( totalPeso % 1 != 0 ) {
 			$capital.html( parseFloat( totalPeso ).toFixed(2) );
@@ -121,10 +126,10 @@
 
 	function totalPriceDc( CvUf ) {
 		let totalPeso = CvUf;
-		$deductible.html( addCommas( parseInt( totalPeso ) ) );
+		$deductible.html( addInteger( totalPeso ) );
 
 		if( totalPeso % 1 != 0 ) {
-			$deductible.html( parseFloat( totalPeso ).toFixed(2) );
+			$deductible.html( totalPeso );
 		}
 
 	}

@@ -27,6 +27,17 @@
 				display: block;
 				position: absolute;
 				width: 100%;
+				&:last-of-type {
+					a {
+						border-radius: 6px;
+						border: 1px solid white;
+						padding: 8px 14px;
+						transition: all .2s cubic-bezier( .4,0,.2,1 );
+						&:hover {
+							background-color: #633971;
+						}
+					}
+				}
 			}
 			&.visible {
 				flex: 1 1 0;
