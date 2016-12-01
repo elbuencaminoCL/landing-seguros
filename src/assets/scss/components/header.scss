@@ -113,7 +113,7 @@
 		.header__list {
 			margin: 0;
 			padding-left: 0;
-			padding-right: 2rem;
+			padding-right: 0;
 		}
 
 		.header__menu {
@@ -122,5 +122,15 @@
 			right: 0;
 			top: 50%;
 			z-index: 10;
+			&.visible {
+				i {
+					&:first-of-type {
+						display: none;
+					}
+					&:last-of-type {
+						display: none;
+					}
+				}
+			}
 		}
 	}

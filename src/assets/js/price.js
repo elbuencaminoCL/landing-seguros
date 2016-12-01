@@ -11,15 +11,15 @@
 	let $pricePeso = $('.pricePeso');
 	let $priceUF = $('.priceUF');
 	let $priceSave = $('.priceSave');
-	let $featuresHeader = $('#featuresHeader')
-	let $featuresHeaderMore = $('#featuresHeaderMore')
+	let $changeCoverage = $('.changeCoverage')
+	let $changeCoverageMore = $('.changeCoverageMore')
 
 	const ufValuePeso = 26329.30;
 
 	if( $selectSecure.val() == 'secureMayor' ) {
 		secureMayorFn();
-		$featuresHeader.removeClass( 'hide' );
-		$featuresHeaderMore.addClass( 'hide' );
+		$changeCoverage.removeClass( 'hide' );
+		$changeCoverageMore.addClass( 'hide' );
 	}
 
 	$selectSecure.add( $selectSecureCan ).add( $selectSecureDate ).add( $selectSecureDateCoverage ).on( 'change', () => {
@@ -31,13 +31,13 @@
 
 		if( $selectSecureVal == 'secureMayor' ) {
 			secureMayorFn();
-			$featuresHeaderMore.addClass( 'hide' );
-			$featuresHeader.removeClass( 'hide' );
+			$changeCoverageMore.addClass( 'hide' );
+			$changeCoverage.removeClass( 'hide' );
 		}
 		else if( $selectSecureVal == 'secureMayorMore' ) {
 			secureMayorMoreFn();
-			$featuresHeader.addClass( 'hide' );
-			$featuresHeaderMore.removeClass( 'hide' );
+			$changeCoverage.addClass( 'hide' );
+			$changeCoverageMore.removeClass( 'hide' );
 		}
 
 		if( isNaN( $capital.html() ) || isNaN( $capital.html() ) ) {
