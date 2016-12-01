@@ -14,7 +14,7 @@
 	let $featuresHeader = $('#featuresHeader')
 	let $featuresHeaderMore = $('#featuresHeaderMore')
 
-	const ufValuePeso = 26304.77;
+	const ufValuePeso = 26329.30;
 
 	if( $selectSecure.val() == 'secureMayor' ) {
 		secureMayorFn();
