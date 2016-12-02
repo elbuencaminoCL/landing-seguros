@@ -2,6 +2,7 @@
 	let $selectSecure = $('select.secure');
 	let $selectSecureDate = $('select.secureDate');
 	let $selectSecureDateCoverage = $('select.secureDateCoverage');
+	let $selectSecureDateCoverageOption = $('select.secureDateCoverage option');
 	let $selectSecureCan = $('select.secureCan');
 	let $selectSecureCanOption = $('select.secureCan option');
 	let $capital = $( '#capital' );
@@ -41,8 +42,16 @@
 		}
 
 		if( isNaN( $capital.html() ) || isNaN( $capital.html() ) ) {
-			$capital.html( '' );
-			$deductible.html( '' );
+
+			$($selectSecureDateCoverage).val( '18' );
+
+			if( $selectSecureVal == 'secureMayor' ) {
+				secureMayorFn();
+			}
+			else if( $selectSecureVal == 'secureMayorMore' ) {
+				secureMayorMoreFn();
+			}
+
 		}
 
 	}
