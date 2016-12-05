@@ -43,6 +43,7 @@
 				flex: 1 1 0;
 				height: auto;
 				opacity: 1;
+				text-align: center;
 				visibility: visible;
 				width: auto;
 				li {
@@ -62,6 +63,9 @@
 		a {
 			color: white;
 			text-transform: uppercase;
+		}
+		&:last-of-type {
+			margin-top: 6px;
 		}
 	}
 
@@ -117,6 +121,9 @@
 					display: inline-block;
 					width: auto;
 				}
+				.visible {
+					text-align: initial;
+				}
 			}
 		}
 
@@ -125,6 +132,13 @@
 			margin: 0;
 			padding-left: 0;
 			padding-right: 0;
+		}
+
+
+		.header__list-item {
+			&:last-of-type {
+				margin-top: 0;
+			}
 		}
 
 		.header__menu {
