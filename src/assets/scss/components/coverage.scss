@@ -26,6 +26,9 @@
 
 	.coverage__features__title {
 		margin-bottom: 3rem;
+		&:nth-of-type(3) {
+			margin-top: 3rem;
+		}
 	}
 
 
