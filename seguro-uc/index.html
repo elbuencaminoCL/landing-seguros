@@ -1,0 +1,1047 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguros de Salud UC Christus</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/1.5.6/numeral.min.js"></script>
+  </head>
+  <body>
+    <input type="hidden" id="refresh" value="no">
+
+    
+    	<header class="header">
+    		<div data-sticky-container id="headerContainer" class="header__container">
+    			<div class="z-depth-4" data-sticky data-options="marginTop:0;" style="width:100%; background-color: #8c51a1;">
+    				<div class="header__row row align-middle" data-magellan>
+    					<div class="header__columns columns">
+    						<figure class="header__logo text-center">
+    							<a href="#intro">
+    								<img src="assets/img/logo.png" alt="Logotipo Red de Salud UC - CHRISTUS">
+    							</a>
+    						</figure>
+    						<div id="headerMenu" class="header__menu">
+    							<i class="fa fa-bars" aria-hidden="true"></i>
+    							<i class="fa fa-times" aria-hidden="true"></i>
+    						</div>
+    					</div>
+    					<div id="headerList" class="header__columns columns">
+    						<ul class="header__list row align-spaced">
+    							<li class="header__list-item">
+    								<a href="#features">Características</a>
+    							</li>
+    							<li class="header__list-item">
+    								<a href="#coverage">Coberturas</a>
+    							</li>
+    							<li class="header__list-item">
+    								<a href="#insurability">Requisitos</a>
+    							</li>
+    							<li class="header__list-item">
+    								<a href="#contract">Tarifas</a>
+    							</li>
+    							<li class="header__list-item">
+    								<!-- Cobertura -->
+    								<a href="https://segurosaluduc.metlife.cl/VentaWeb/Formulario/ProductoSaludUCChristusPlus" target="_blank" class="changeCoverage">
+    									Contrátalo aquí
+    								</a>
+    
+    								<!-- Cobertura + complementario -->
+    								<a href="https://segurosaluduc.metlife.cl/VentaWeb/Formulario/ProductoSaludUCChristusPlusPlus" target="_blank" class="changeCoverageMore">
+    									Contrátalo aquí
+    								</a>
+    								<!-- End cobertura + complementario -->
+    							</li>
+    						</ul>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</header>
+    
+      
+      	<section class="intro z-depth-3" id="intro" data-magellan-target="intro">
+      		<figure class="intro__bg">
+      			<img src="assets/img/iStock-535851115.jpg" alt="Imágen de fondo" />
+      			<section class="intro__header">
+      				<div class="row">
+      					<div class="intro__columns columns small-12 medium-7">
+      							<!-- <h3 class="heading__sub-title">Sólo contratando tu seguro UC en línea</h3>
+      							<h2 class="heading__title">Obtén los 3 primeros meses</h2>
+      							<h2 class="heading__title">De protección sin costo</h2> -->
+      							<h2 class="heading__title">Obtén los 3 primeros meses<br>de Seguro sin costo</h2> 
+      					</div>
+      				</div>
+      			</section>
+      			<div class="intro__content">
+      				<section class="intro__plan">
+      					<div class="row">
+      						<div class="columns">
+      							<p class="intro__plan__description text-center">Selecciona las distintas opciones para conocer cuál es el plan que mejor se adecua a tus necesidades</p>
+      
+      							<div class="intro__plan__row row ">
+      								<div class="intro__plan__columns columns small-12 medium-6">
+      									<div class="row">
+      										<div class="columns small-12 medium-4">
+      											<h6 class="intro__plan__sub-title">Tipo de seguro:</h6>
+      										</div>
+      										<div class="columns small-12 medium-8">
+      											<select name="" id="secure" class="secure">
+      												<option value="secureMayor">Gastos médicos mayores</option>
+      												<option value="secureMayorMore">Gastos médicos mayores + Complementario</option>
+      											</select>
+      										</div>
+      										<div class="columns small-12 medium-4">
+      											<h6 class="intro__plan__sub-title">Cantidad de asegurados:</h6>
+      										</div>
+      										<div class="columns small-12 medium-8">
+      											<select name="" id="secureCan" class="secureCan">
+      												<option value="titular1"
+      														data-uf18="0.40"
+      														data-uf25="0.52"
+      														data-uf35="0.57"
+      														data-uf40="0.63"
+      														data-uf45="1.03"
+      														data-uf50="1.48"
+      														data-uf55="2.05"
+      														data-uf60="2.75"
+      														data-more-uf18="1.29"
+      														data-more-uf25="1.41"
+      														data-more-uf35="1.46"
+      														data-more-uf40="1.52"
+      														data-more-uf45="1.92"
+      														data-more-uf50="2.37"
+      														data-more-uf55="2.94"
+      														data-more-uf60="3.64">
+      														Titular sin asegurados dependientes
+      												</option>
+      												<option value="titular2"
+      														data-uf18="0.69"
+      														data-uf25="0.90"
+      														data-uf35="0.99"
+      														data-uf40="1.16"
+      														data-uf45="1.82"
+      														data-uf50="2.66"
+      														data-uf55="3.80"
+      														data-uf60="5.64"
+      														data-more-uf18="2.13"
+      														data-more-uf25="2.35"
+      														data-more-uf35="2.44"
+      														data-more-uf40="2.61"
+      														data-more-uf45="3.26"
+      														data-more-uf50="4.11"
+      														data-more-uf55="5.25"
+      														data-more-uf60="7.08">
+      														Titular más un asegurado dependiente
+      												</option>
+      												<option value="titular3"
+      														data-uf18="0.85"
+      														data-uf25="1.12"
+      														data-uf35="1.24"
+      														data-uf40="1.44"
+      														data-uf45="2.27"
+      														data-uf50="3.35"
+      														data-uf55="4.84"
+      														data-uf60="7.41"
+      														data-more-uf18="2.56"
+      														data-more-uf25="2.83"
+      														data-more-uf35="2.95"
+      														data-more-uf40="3.14"
+      														data-more-uf45="3.98"
+      														data-more-uf50="5.06"
+      														data-more-uf55="6.55"
+      														data-more-uf60="9.12">
+      														Titular más dos asegurados dependientes
+      												</option>
+      												<option value="titular4"
+      														data-uf18="0.97"
+      														data-uf25="1.28"
+      														data-uf35="1.42"
+      														data-uf40="1.64"
+      														data-uf45="2.61"
+      														data-uf50="3.85"
+      														data-uf55="5.58"
+      														data-uf60="8.62"
+      														data-more-uf18="2.87"
+      														data-more-uf25="3.18"
+      														data-more-uf35="3.32"
+      														data-more-uf40="3.53"
+      														data-more-uf45="4.51"
+      														data-more-uf50="5.75"
+      														data-more-uf55="7.48"
+      														data-more-uf60="10.51">
+      														Titular más tres asegurados dependientes
+      												</option>
+      											</select>
+      										</div>
+      
+      										<div class="columns small-12 medium-4">
+      											<h6 class="intro__plan__sub-title">Edad del asegurado de mayor edad:</h6>
+      										</div>
+      										<div class="columns small-12 medium-8">
+      											<select name="" id="secureDate" class="secureDate">
+      												<option value="18">Entre 18 años - 24 años y 364 días</option>
+      												<option value="25">Entre 25 años - 34 años y 364 días</option>
+      												<option value="35">Entre 35 años - 39 años y 364 días</option>
+      												<option value="40">Entre 40 años - 44 años y 364 días</option>
+      												<option value="45">Entre 45 años - 49 años y 364 días</option>
+      												<option value="50">Entre 50 años - 54 años y 364 días</option>
+      												<option value="55">Entre 55 años - 59 años y 364 días</option>
+      												<option value="60">Entre 60 años - 69 años y 364 días</option>
+      											</select>
+      										</div>
+      									</div>
+      								</div>
+      								<div class="intro__plan__columns columns small-12 medium-6 text-center">
+      									<div class="intro__price__plan">
+      		      					<h3 class="intro__price__title">Precio de tu plan</h3>
+      		      					<p class="intro__price__amount"><span class="price-peso">$ <span class="pricePeso"></span></span><span class="intro__price__second-amount">UF <span class="intro__price__second-amount priceUF"></span> / MES</span></p>
+      		      					<p class="intro__price__sub-title">Puedes Ahorrar <span class="priceSave"></span></p>
+      		      				</div>
+      
+      		      				<!-- Cobertura -->
+      		      				<a href="https://segurosaluduc.metlife.cl/VentaWeb/Formulario/ProductoSaludUCChristusPlus" target="_blank" class="changeCoverage contract__price__button button">
+      		      					<h3>Contrata ahora en línea</h3>
+      		      					<p><em>Y obtén los 3 primeros meses de Seguro sin costo</em></p>
+      		      				</a>
+      
+      		      				<!-- Cobertura + complementario -->
+      		      				<a href="https://segurosaluduc.metlife.cl/VentaWeb/Formulario/ProductoSaludUCChristusPlusPlus" target="_blank" class="changeCoverageMore contract__price__button button">
+      		      					<h3>Contrata ahora en línea</h3>
+      		      					<p><em>Y obtén los 3 primeros meses de Seguro sin costo</em></p>
+      		      				</a>
+      		      				<!-- End cobertura + complementario -->
+      
+      								</div>
+      							</div>
+      							<p class="intro__plan__description text-center">Esta cotización es referencial. Los valores podrían variar de acuerdo al grupo familiar y las edades de los asegurados.<br>Valor referencial en pesos calculado en base al valor de UF 26.329,30 del día 9 de diciembre de 2016.</p>
+      						</div>
+      					</div>
+      				</section>
+      			</div>
+      		</figure>
+      
+      
+      	</section>
+      
+      	<div id="wrapper" class="wrapper">
+      		<div id="loading" class="loading">
+      			<div class="columns">
+      				<h3 class="text-center">Cargando información</h3>
+      				<div class="loader">Loading...</div>
+      			</div>
+      		</div>
+      		<section class="features" id="features" data-magellan-target="features">
+      			<section class="changeCoverage features__header z-depth-1">
+      				<div class="row">
+      					<div class="features__heading columns small-12">
+      						<h4 class="heading__sub-title text-center">Conoce más sobre el</h4>
+      						<h2 class="heading__title text-center">Seguro de gastos médicos mayores</h2>
+      					</div>
+      					<div class="columns small-12">
+      						<p>Una enfermedad o accidente es, por sí sola, una situación difícil de enfrentar. Si se le suma el costo económico, ésta puede convertirse en una catástrofe para el presupuesto familiar. Pensando en ello, <strong>Red de Salud UC CHRISTUS</strong>, en conjunto con <strong>MetLife Chile Seguros de Vida S.A.</strong>, han creado  un <strong>Seguro de Salud para Gastos Médicos Mayores</strong>, especialmente diseñado para protegerte con el respaldo de la medicina UC.</p>
+      					</div>
+      					<div class="columns small-12 medium-6">
+      						<h5 class="features__sub-title heading__sub-title text-center">Principales características del seguro</h5>
+      						<ul class="features__list">
+      							<li class="features__list-item bullet-list">La mayor cobertura en <strong>Seguro Catastrófico de Clínicas</strong>, con un capital asegurado de UF 36.000 por evento.</li>
+      							<li class="features__list-item bullet-list">Cobertura para pacientes FONASA e ISAPRE.</li>
+      							<li class="features__list-item bullet-list">Deducible UF 60 por evento y asegurado, y sin deducible para las principales enfermedades graves hasta los 50 años de edad.
+      							<ul class="features__list">
+      								<li class="bullet-list">Cáncer</li>
+      								<li class="bullet-list">Accidente vascular cerebral</li>
+      								<li class="bullet-list">Infarto al miocardio</li>
+      								<li class="bullet-list">Insuficiencia renal crónica</li>
+      								<li class="bullet-list">Angioplastía por balón</li>
+      								<li class="bullet-list">Injerto aórtico</li>
+      								<li class="bullet-list">Cirugía de válvulas cardiacas</li>
+      								<li class="bullet-list">Trasplante de órganos mayores</li>
+      								<li class="bullet-list">Alzheimer</li>
+      							</ul>
+      							</li>
+      							<li class="features__list-item bullet-list">Cobertura hasta cumplir los 100 años de edad.</li>
+      							<li class="features__list-item bullet-list">No tiene carencia a partir del inicio de vigencia del asegurado en la póliza.</li>
+      						</ul>
+      						<div class="row features__umbrella__row align-middle">
+      							<div class="columns small-12 medium-1">
+      								<img src="assets/img/shape.png" alt="">
+      							</div>
+      							<div class="columns small-12 medium-11">
+      								<h5 class="features__umbrella"> <em>Amplía tu cobertura, incluyendo en tu plan un <a href="" class="wrapperAnimate getMayorMore">Seguro Complementario de Salud</a> para reembolso de gastos menores.</em></h5>
+      							</div>
+      						</div>
+      					</div>
+      					<div class="columns small-12 medium-6 show-for-medium text-right">
+      						<img src="assets/img/medico_uc.jpg" />
+      					</div>
+      				</div>
+      			</section>
+      
+      			<section class="changeCoverageMore features__header z-depth-1">
+      				<div class="row">
+      					<div class="features__heading columns small-12">
+      						<h4 class="heading__sub-title text-center">Conoce más sobre el</h4>
+      						<h2 class="heading__title text-center">SEGURO DE GASTOS MÉDICOS MAYORES <br>+ COMPLEMENTARIO DE SALUD</h2>
+      					</div>
+      					<div class="columns small-12">
+      						<p><strong>Red de Salud UC CHRISTUS,</strong> en conjunto con <strong>MetLife Chile Seguros de Vida S.A.,</strong> ha creado un seguro para protegerte frente a una catástrofe económica de alto costo y apoyarte en los gastos de menores como consultas médicas, exámenes y procedimientos para paciente con sistema de salud ISAPRE o FONASA.</p>
+      					</div>
+      					<div class="columns small-12 medium-6">
+      						<h5 class="features__sub-title heading__sub-title text-center">Principales características del seguro</h5>
+      						<h6><strong>Gastos Médicos Mayores</strong></h6>
+      						<ul class="features__list">
+      							<li class="features__list-item bullet-list">La mayor cobertura en <strong>Seguro Catastrófico de Clínicas,</strong> con un capital asegurado de UF 36.000 por evento y un deducible de UF 60 por evento y asegurado.</li>
+      						</ul>
+      						<h6><strong>Complementario de Salud</strong></h6>
+      						<ul class="features__list">
+      							<li class="features__list-item bullet-list">Cubre UF 60 al año póliza y por asegurado, con un deducible de acumulación anual de UF 2 por asegurado con un tope de UF 6 por grupo familiar.</li>
+      							<li class="features__list-item bullet-list">El deducible se aplica sobre los gastos una vez aplicado el Plan de salud (ISAPRE o FONASA)</li>
+      							<li class="features__list-item bullet-list">Cobertura I-med para consultas médicas y exámenes.</li>
+      
+      						</ul>
+      
+      					</div>
+      					<div class="columns small-12 medium-6 show-for-medium text-right">
+      						<img src="assets/img/medico_uc.jpg" />
+      					</div>
+      				</div>
+      			</section>
+      
+      
+      			<section class="features__contract">
+      				<div class="row">
+      					<div class="columns text-center">
+      						<h3>¿Listo para contratar?</h3>
+      						<h5>Contrata Ahora en Línea y comienza a pagar a partir del cuarto mes.</h5>
+      						<!-- Cobertura -->
+      						<a href="https://segurosaluduc.metlife.cl/VentaWeb/Formulario/ProductoSaludUCChristusPlus" target="_blank" class="changeCoverage button large">Contrátalo ahora en línea</a>
+      
+      						<!-- Cobertura + complementario -->
+      						<a href="https://segurosaluduc.metlife.cl/VentaWeb/Formulario/ProductoSaludUCChristusPlusPlus" target="_blank" class="changeCoverageMore button large">Contrátalo ahora</a>
+      						<!-- End cobertura + complementario -->
+      					</div>
+      				</div>
+      			</section>
+      		</section>
+      
+      	<section class="coverage" id="coverage" data-magellan-target="coverage">
+      		<section class="coverage__intro">
+      			<div class="row">
+      				<div class="columns text-center">
+      					<h2 class="coverage__intro__title heading__title">Coberturas</h2>
+      					<p class="coverage__intro__description">Las coberturas dependen de la edad del asegurado y del plan seleccionado</p>
+      					<p class="coverage__intro__date"><em>Indica tu edad o de la persona que deseas asegurar</em></p>
+      					<select name="" id="secureDate2" class="secureDateCoverage">
+      						<option value="18">18 años hasta cumplir 50 años</option>
+      						<option value="50">50 años hasta cumplir 70 años</option>
+      						<option value="70">70 años hasta cumplir 81 años</option>
+      						<option value="81">81 años hasta cumplir 90 años</option>
+      						<option value="90">90 años hasta cumplir 100 años</option>
+      						<option value="1865">18 años hasta cumplir 65 años</option>
+      					</select>
+      				</div>
+      			</div>
+      		</section>
+      
+      
+      		<section class="coverage__list">
+      			<div class="coverage__list__row row text-center align-bottom">
+      				<div class="columns small-12 medium-3">
+      					<div class="row coverage__list__sub-row align-middle">
+      						<div class="columns small-6 medium-12">
+      							<p class="coverage__list__row__desc">Capital</p>
+      							<p class="coverage__list__row__desc">Asegurado</p>
+      						</div>
+      						<div class="columns small-6 medium-12">
+      							<h3 class="coverage__list__row__title">UF
+      								<span id="capital"
+      									data-cvuf18="36000"
+      									data-cvuf50="36000"
+      									data-cvuf70="3500"
+      									data-cvuf81="3500"
+      									data-cvuf90="3500"
+      									data-cvuf1865="36000"></span>
+      							</h3>
+      						</div>
+      					</div>
+      				</div>
+      				<div class="columns small-12 medium-3">
+      					<div class="row coverage__list__sub-row align-middle">
+      						<div class="columns small-6 medium-12">
+      							<p class="coverage__list__row__desc">Deducible</p>
+      						</div>
+      						<div class="columns small-6 medium-12">
+      							<h3 class="coverage__list__row__title">UF
+      								<span id="deductible"
+      									data-cvuf18="60"
+      									data-cvuf50="60"
+      									data-cvuf70="200"
+      									data-cvuf81="300"
+      									data-cvuf90="400"
+      									data-cvuf1865="2"></span>
+      							</h3>
+      						</div>
+      					</div>
+      				</div>
+      				<div class="columns small-12 medium-6">
+      					<div class="row coverage__list__sub-row align-middle">
+      						<div class="columns small-6 medium-12">
+      							<p class="coverage__list__row__desc">Enfermedades con</p>
+      							<p class="coverage__list__row__desc">deducible diferenciado <i data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Cáncer, Accidente Vascular Cerebral, Infarto al Miocardio, Insuficiencia Renal Crónica, Angioplastía, Injerto Aórtico, Cirugía de Válvulas Cardiacas, Transplante de órganos mayores y Alzheimer." class="has-tip top fa fa-info-circle" aria-hidden="true"></i></p>
+      						</div>
+      						<div class="columns small-6 medium-12">
+      							<h3 class="coverage__list__row__title">
+      								<span id="deductibleSick"
+      									data-cvuf18="Sin deducible"
+      									data-cvuf50="Todas con deducible"
+      									data-cvuf70="Todas con deducible"
+      									data-cvuf81="Todas con deducible"
+      									data-cvuf90="Todas con deducible"></span>
+      							</h3>
+      						</div>
+      					</div>
+      				</div>
+      			</div>
+      		</section>
+      
+      
+      		<!-- Cobertura -->
+      
+      		<section class="coverage__features">
+      			<div class="changeCoverageMore coverage__features__title text-center">
+      				<h3 class="heading__title">Cobertura Seguro Gastos Médicos Mayores</h3>
+      			</div>
+      
+      			<div class="row" data-accordion>
+      				<div class="coverage__features__columns row columns small-12 medium-6 is-active"  data-accordion-item>
+      					<a href="#" class="accordion-title"><img src="assets/img/hospitalaria.png" alt="Logotipo Hospitalarias"> Coberturas hospitalarias</a>
+      					<div class="coverage__features__tab-content" data-tab-content>
+      						<figure class="coverage__features__image show-for-medium">
+      							<img src="assets/img/iStock-520613914.jpg" alt="">
+      							<figcaption class="coverage__features__image-caption">
+      								<img src="assets/img/ico_cobertura-hospitalaria.svg" />
+      								<h4 class="coverage__features__image__title"> Coberturas Hospitalarias</h4>
+      							</figcaption>
+      						</figure>
+      						<ul class="coverage__features__list">
+      							<li class="coverage__features__list-item row">
+      								<div class="columns small-3">
+      									<h4 class="coverage__features__list__title">Hasta</h4>
+      									<p class="coverage__features__list__percentage">100%</p>
+      									<h4 class="coverage__features__list__title">De reembolso</h4>
+      								</div>
+      								<div class="columns small-9">
+      									<p>Días Cama, Servicios Hospitalarios / Medicamentos Hospitalarios, Honorarios Médicos Quirúrgicos, Prótesis y Órtesis Quirúrgicas, Cirugía Dental y Cirugía Plástica Reparadora por Accidente, Complicaciones del Embarazo, <span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Para la prestación de servicio de enfermera el tope será de 30 días por evento.">Servicio de enfermera</span> y <span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Para la prestación de ambulancia terrestre el tope será de UF 10 por evento, y con un máximo de 3 eventos por año.">Servicio de Ambulancia Terrestre.</span></p>
+      									<p>Drogas antineoplásicas, Drogas Inmunosupresoras para Trasplante de Órganos, <span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Para la prestación de ambulancia aérea en caso de riesgo vital, el tope será de UF 10 por evento y con un máximo de 3 eventos por año">Ambulancia Aérea.</span></p>
+      								</div>
+      							</li>
+      							<li class="coverage__features__list-item row align-middle">
+      								<div class="columns small-3">
+      									<h4 class="coverage__features__list__title">Hasta</h4>
+      									<p class="coverage__features__list__percentage">50%</p>
+      									<h4 class="coverage__features__list__title">De reembolso</h4>
+      								</div>
+      								<div class="columns small-9">
+      									<p>Pacientes FONASA, teniendo en cuenta una cobertura FONASA inferior al 50%</p>
+      								</div>
+      							</li>
+      							<li class="coverage__features__list-item row align-middle">
+      								<div class="columns small-3">
+      									<h4 class="coverage__features__list__title">Hasta</h4>
+      									<p class="coverage__features__list__percentage">25%</p>
+      									<h4 class="coverage__features__list__title">De reembolso</h4>
+      								</div>
+      								<div class="columns small-9">
+      									<p>Sin Cobertura Plan del Sistema Previsional de Salud</p>
+      								</div>
+      							</li>
+      						</ul>
+      					</div>
+      				</div>
+      				<div class="coverage__features__columns row columns small-12 medium-6"  data-accordion-item>
+      					<a href="#" class="accordion-title"><img src="assets/img/ambulatoria.png" alt="Logotipo ambulatoria"> Coberturas Ambulatorias</a>
+      					<div class="coverage__features__tab-content" data-tab-content>
+      						<figure class="coverage__features__image show-for-medium">
+      							<img src="assets/img/iStock-470764758.jpg" alt="">
+      							<figcaption class="coverage__features__image-caption">
+      								<img src="assets/img/ico_cobertura-ambulatoria.svg" />
+      								<h4 class="coverage__features__image__title">Coberturas Ambulatorias</h4>
+      							</figcaption>
+      						</figure>
+      						<ul class="coverage__features__list">
+      							<li class="coverage__features__list-item row">
+      								<div class="columns small-3">
+      									<h4 class="coverage__features__list__title">Hasta</h4>
+      									<p class="coverage__features__list__percentage">100%</p>
+      									<h4 class="coverage__features__list__title">De reembolso</h4>
+      								</div>
+      								<div class="columns small-9">
+      									<p>Cirugía Ambulatoria, Consultas Médicas, Exámenes de Laboratorio, Exámenes Imagenología y Procedimientos de Diagnósticos, Terapéuticos, Kinesiología, Prótesis y Ortesis Ambulatoria</p>
+      									<p>Drogas antineoplásicas, Drogas Inmunosupresoras para trasplante de órganos.</p>
+      								</div>
+      							</li>
+      							<li class="coverage__features__list-item row align-middle">
+      								<div class="columns small-3">
+      									<h4 class="coverage__features__list__title">Hasta</h4>
+      									<p class="coverage__features__list__percentage">50%</p>
+      									<h4 class="coverage__features__list__title">De reembolso</h4>
+      								</div>
+      								<div class="columns small-9">
+      									<p>Pacientes FONASA, si FONASA no cubra al menos el 50%</p>
+      									<p><span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="La prestación de medicamentos ambulatorios es sólo para fármacos directamente relacionados y necesarios para el tratamiento de la patología que activó el pago de beneficios de este seguro, que se encuentre cubierta por esta póliza y haya sido diagnosticada por el médico tratante, excepto el Síndrome de Inmunodeficiencia Adquirida (SIDA) para el cual, se excluyen las prestaciones Ambulatorias">Medicamentos Ambulatorios</span></p>
+      								</div>
+      							</li>
+      							<li class="coverage__features__list-item row align-middle">
+      								<div class="columns small-3">
+      									<h4 class="coverage__features__list__title">Hasta</h4>
+      									<p class="coverage__features__list__percentage">25%</p>
+      									<h4 class="coverage__features__list__title">De reembolso</h4>
+      								</div>
+      								<div class="columns small-9">
+      									<p>Sin cobertura plan del Sistema Previsional de Salud</p>
+      								</div>
+      							</li>
+      						</ul>
+      					</div>
+      				</div>
+      				<div class="changeCoverage coverage__features__footer">
+      					<p><em><br>Carencia de 30 días desde la fecha de inicio de vigencia del asegurado en la póliza, rige sólo para enfermedades, no así para accidentes.</em></p>
+      				</div>
+      				<div class="changeCoverageMore coverage__features__footer">
+      					<p><em><br>Carencia de 30 días desde la fecha de inicio de vigencia del asegurado en la póliza, rige sólo para enfermedades, no así para accidentes.</em></p>
+      				</div>
+      			</div>
+      
+      
+      			<section class="changeCoverage coverage__more">
+      				<div class="row">
+      					<div class="columns text-center">
+      						<div class="coverage__more__content">
+      							<h3 class="coverage__more__content__title">¿Quieres ampliar la cobertura</h3>
+      							<p class="coverage__more__content__desc">de tu plan incorporando un <strong>Seguro Complementario de Salud</strong> desde $33.930 (UF 1.113) mensual?</p>
+      							<a href="" class="wrapperAnimate coverage__more__content__button button large getMayorMore">Amplía tu cobertura</a>
+      						</div>
+      					</div>
+      				</div>
+      			</section>
+      
+      			<div class="changeCoverageMore coverage__features__title text-center">
+      				<div class="changeCoverageMore coverage__list__row row text-center align-bottom">
+      				<div class="columns small-12 medium-3 medium-offset-3">
+      					<div class="row coverage__list__sub-row align-middle">
+      						<div class="columns small-6 medium-12">
+      							<p class="coverage__list__row__desc">Capital</p>
+      							<p class="coverage__list__row__desc">Asegurado</p>
+      						</div>
+      						<div class="columns small-6 medium-12">
+      							<h3 class="coverage__list__row__title">UF 60</h3>
+      						</div>
+      					</div>
+      				</div>
+      				<div class="columns small-12 medium-3">
+      					<div class="row coverage__list__sub-row align-middle">
+      						<div class="columns small-6 medium-12">
+      							<p class="coverage__list__row__desc">Deducible</p>
+      						</div>
+      						<div class="columns small-6 medium-12">
+      							<h3 class="coverage__list__row__title">UF 2</h3>
+      						</div>
+      					</div>
+      				</div>
+      			</div>
+      				<p>&nbsp;</p>
+      				<h3 class="heading__title">Cobertura Seguro Complementario de Salud</h3>
+      			</div>
+      
+      
+      			
+      			
+      
+      
+      
+      
+      			<div class="changeCoverageMore row" data-accordion>
+      				<div class="coverage__features__columns row columns small-12 medium-6 is-active"  data-accordion-item>
+      					<a href="#" class="accordion-title"><img src="assets/img/hospitalaria.png" alt="Logotipo Hospitalarias"> Coberturas hospitalarias</a>
+      					<div class="coverage__features__tab-content" data-tab-content>
+      						<figure class="coverage__features__image show-for-medium">
+      							<img src="assets/img/iStock-520613914.jpg" alt="">
+      							<figcaption class="coverage__features__image-caption">
+      								<img src="assets/img/ico_cobertura-hospitalaria.svg" />
+      								<h4 class="coverage__features__image__title"> Coberturas Hospitalarias</h4>
+      							</figcaption>
+      						</figure>
+      						<ul class="coverage__features__list">
+      							<li class="coverage__features__list-item row">
+      								<div class="columns small-3">
+      									<h4 class="coverage__features__list__title">idem % de reembolso efectivo de ISAPRE o FONASA</h4>
+      								</div>
+      								<div class="columns small-9">
+      									<p>Medicamentos Hospitalarios, materiales clínicos, exámenes y procedimientos, derecho a pabellón, honorario médicos quirúrgicos y servicio de ambulancia <span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Los topes de cada cobertura no podrán ser superiores al tope anual por beneficiario, UF 60.">sin tope máximo por prestación</span> y sin tope máximo anual por beneficiario.</p>
+      									<p><span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Tope máximo de cama 30 días por evento">Día Cama*</span>, Día Cama Sala Cuna* Día Incubadora*, Día Cama Recuperación* y Día Cama Uti/Uci/Coronaria/Intermedia<br>
+      										<span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Los topes de cada cobertura no podrán ser superiores al tope anual por beneficiario, UF 60">Tope máximo por prestación UF 3</span> sin tope máximo anual por beneficiario.</p>
+      									<p><span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Tope máximo por Prestación UF 20 Sin Tope máxmimo anual por beneficiario*">Parto Normal</span></p>
+      									<p><span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Tope máximo por Prestación UF 30 Sin Tope máxmimo anual por beneficiario*">Cesárea</span></p>
+      									<p><span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Tope máximo por Prestación UF 10 Sin Tope máxmimo anual por beneficiario*">Aborto no provocado</span></p>
+      								</div>
+      							</li>
+      						</ul>
+      					</div>
+      				</div>
+      				<div class="coverage__features__columns row columns small-12 medium-6"  data-accordion-item>
+      					<a href="#" class="accordion-title"><img src="assets/img/ambulatoria.png" alt="Logotipo ambulatoria"> Coberturas Ambulatorias</a>
+      					<div class="coverage__features__tab-content" data-tab-content>
+      						<figure class="coverage__features__image show-for-medium">
+      							<img src="assets/img/iStock-470764758.jpg" alt="">
+      							<figcaption class="coverage__features__image-caption">
+      								<img src="assets/img/ico_cobertura-ambulatoria.svg" />
+      								<h4 class="coverage__features__image__title">Coberturas Ambulatorias</h4>
+      							</figcaption>
+      						</figure>
+      						<ul class="coverage__features__list">
+      							<li class="coverage__features__list-item row">
+      								<div class="columns small-3">
+      									<h4 class="coverage__features__list__title">idem % de reembolso efectivo de ISAPRE o FONASA</h4>
+      								</div>
+      								<div class="columns small-9">
+      									<p>Exámenes de laboratorio, exámenes radiológicos, procedimientos de diagnósticos no quirúrgicos, procedimientos quirúrgicos, fonoaudiología, kinesiología, medicina física, procedimientos terapéutios no quirúrgicos
+      									<span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Los topes de cada cobertura no podrán ser superiores al tope anual por beneficiario, UF 60.">sin tope máximo por prestación</span> y sin tope máximo anual por beneficiario.</p>
+      									<p>Consultas médicas.
+      									<span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Los topes de cada cobertura no podrán ser superiores al tope anual por beneficiario, UF 60.">Tope máximo por prestación UF 1</span> sin tope máximo anual por beneficiario.</p>
+      								</div>
+      							</li>
+      							<li class="coverage__features__list-item row align-middle">
+      								<div class="columns small-3">
+      									<h4 class="coverage__features__list__title">Hasta</h4>
+      									<p class="coverage__features__list__percentage">10%</p>
+      									<h4 class="coverage__features__list__title">De reembolso</h4>
+      								</div>
+      								<div class="columns small-9">
+      									<p><span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Los medicamentos asociados al Síndrome de Inmunodeficiencia Adquirida (SIDA) para el cual se excluyen las prestaciones Ambulatorias">Medicamentos.</span></p>
+      								</div>
+      							</li>
+      						</ul>
+      					</div>
+      				</div>
+      				<div class="changeCoverageMore coverage__features__footer">
+      					<p><em><br/>Carencia de 90 días desde la fecha de inicio de vigencia del asegurado en la póliza para cobertura ambulatoria, no así para hospitalarias.</em></p>
+      				</div>
+      			</div>
+      
+      		</section>
+      
+      
+      		<!-- Cobertura complementaria -->
+      
+      		<section class="changeCoverageMore coverage__features">
+      
+      			<!-- End Cobertura complementaria -->
+      
+      		</section>
+      	</section>
+      
+      	<section class="insurability" id="insurability" data-magellan-target="insurability">
+      
+      
+      		<!-- Cobertura -->
+      		<div class="insurability__row row">
+      			<div class="columns text-center">
+      				<h2 class="insurability__title heading__title">Requisitos de asegurabilidad</h2>
+      				<p class="insurability__description">Son asegurables los clientes que obtengan prestaciones o atenciones médicas en la <strong>Red de Salud UC CHRISTUS.</strong></p>
+      			</div>
+      		</div>
+      
+      
+      		<div class="changeCoverageMore insurability__features__title text-center">
+      			<h3 class="heading__title">Requisitos de asegurabilidad de Seguro de Gastos Médicos Mayores</h3>
+      		</div>
+      
+      		<div class="insurability__row row">
+      			<div class="columns small-12 medium-6">
+      				<div class="insurability__box text-center">
+      					<p class="insurability__box__desc"><span>Asegurado:</span></p>
+      					<p class="insurability__box__desc">Titular, Cónyuge, Conviviente Civil o Pareja</p>
+      					<p class="insurability__box__desc"><span>Edad Mínima / Máxima de Incorporación:</span></p>
+      					<p class="insurability__box__desc">18 años / 69 años y 364 días</p>
+      					<p class="insurability__box__desc"><span>Edad Máxima de Permanencia:</span></p>
+      					<p class="insurability__box__desc">99 años y 364 días</p>
+      				</div>
+      			</div>
+      			<div class="columns small-12 medium-6">
+      				<div class="insurability__box text-center">
+      					<p class="insurability__box__desc"><span>Asegurado:</span></p>
+      					<p class="insurability__box__desc">Hijos y Nietos</p>
+      					<p class="insurability__box__desc"><span>Edad Mínima / Máxima de Incorporación:</span></p>
+      					<p class="insurability__box__desc">14 días / 22 años y 364 días</p>
+      					<p class="insurability__box__desc"><span>Edad Máxima de Permanencia:</span></p>
+      					<p class="insurability__box__desc">23 años y 364 días</p>
+      				</div>
+      			</div>
+      		</div>
+      
+      		<!-- Cobertura Complementaria -->
+      
+      		<div class="changeCoverageMore insurability__features__title text-center">
+      			<h3 class="heading__title">Requisitos de asegurabilidad de Cobertura Complementaria de Salud</h3>
+      		</div>
+      
+      		<div class="changeCoverageMore insurability__row row">
+      			<div class="columns small-12 medium-6">
+      				<div class="insurability__box text-center">
+      					<p class="insurability__box__desc"><span>Asegurado:</span></p>
+      					<p class="insurability__box__desc">Titular, Cónyuge, Conviviente Civil o Pareja</p>
+      					<p class="insurability__box__desc"><span>Edad Mínima / Máxima de Incorporación:</span></p>
+      					<p class="insurability__box__desc">18 años / 59 años y 364 días</p>
+      					<p class="insurability__box__desc"><span>Edad Máxima de Permanencia:</span></p>
+      					<p class="insurability__box__desc">64 años y 364 días</p>
+      				</div>
+      			</div>
+      			<div class="columns small-12 medium-6">
+      				<div class="insurability__box text-center">
+      					<p class="insurability__box__desc"><span>Asegurado:</span></p>
+      					<p class="insurability__box__desc">Hijos y Nietos</p>
+      					<p class="insurability__box__desc"><span>Edad Mínima / Máxima de Incorporación:</span></p>
+      					<p class="insurability__box__desc">14 días / 22 años y 364 días</p>
+      					<p class="insurability__box__desc"><span>Edad Máxima de Permanencia:</span></p>
+      					<p class="insurability__box__desc">23 años y 364 días</p>
+      				</div>
+      			</div>
+      		</div>
+      
+      		<!-- End Cobertura Complementaria -->
+      
+      		<div class="insurability__row row">
+      			<ul class="insurability__list">
+      				<li class="insurability__list-item bullet-list">
+      					<p class="insurability__list-item__desc">Para la contratación del Seguro Complementario es requisito la contratación del Seguro de Gastos Médicos Mayores.</p>
+      				</li>
+      				<li class="insurability__list-item bullet-list">
+      					<p class="insurability__list-item__desc">FONASA no aplica en Clínica San Carlos de Apoquindo.</p>
+      				</li>
+      				<li class="insurability__list-item bullet-list">
+      					<p class="insurability__list-item__desc">Exclusivo para prestaciones en <strong>Red de Salud UC CHRISTUS.</strong></p>
+      				</li>
+      				<li class="insurability__list-item bullet-list">
+      					<p class="insurability__list-item__desc">La cobertura comenzará su vigencia a partir del primer día del mes siguiente a la contratación. En consecuencia, todas aquellas enfermedades que hayan sido diagnosticadas o accidentes ocurridos con anterioridad a la fecha de inicio de vigencia se considerarán preexistentes.</p>
+      				</li>
+      				<li class="insurability__list-item bullet-list">
+      					<p class="insurability__list-item__desc"><a data-open="exclution">Ver Exclusiones de Cobertura</a></p>
+      					<div class="reveal" id="exclution" data-reveal>
+      					  <h3 class="insurability__list-item__title text-center">EXCLUSIONES</h3>
+      					  <ul>
+      					  	<li class="bullet-list"><p>Para el Seguro de Prestaciones Médicas de Alto Costo, regirán las exclusiones establecidas en el artículo N°4 de las Condiciones Generales registradas en el depósito de pólizas de la Superintendencia de&nbsp; Valores y Seguros bajo el código <a href="http://redsalud.uc.cl/medios/segurosaluduc/POL-320150527-Prestaciones-Medicas-de%20Alto-Costo.pdf" target="_blank">POL 3 2015 0527</a>. Sin perjuicio de lo señalado, se deja sin efecto la exclusión establecida en la letra h) , letra e) y letra q) número vii, Artículo 4º del <a href="http://redsalud.uc.cl/medios/segurosaluduc/POL-320150527-Prestaciones-Medicas-de%20Alto-Costo.pdf" target="_blank">POL 3 2015 0527</a>.</p></li>
+      					  	<li class="bullet-list"><p>Para el Seguro Complementario de Salud, regirán las exclusiones establecidas en el artículo N°6 de las Condiciones Generales registradas en el Depósito de Pólizas de la Superintendencia de Valores y Seguros bajo el código <a href="http://redsalud.uc.cl/medios/segurosaluduc/POL320130223-Colectivo-Complementario-de-Salud.pdf" target="_blank">POL 3 2013 0223</a>, a excepción de la exclusión k) (en lo relativo a: aparatos auditivos, lentes o anteojos ópticos o de contacto, prótesis y ortesis) la que se considerará cubierta por esta cobertura.</p></li>
+      					  </ul>
+      					  <button class="close-button" data-close="" aria-label="Close modal" type="button">
+            		    <span aria-hidden="true">×</span>
+            		  </button>
+      					</div>
+      				</li>
+      			</ul>
+      		</div>
+      	</section>
+      
+      	<section class="maps show-for-medium z-depth-1">
+      		<div class="maps__row row">
+      			<div class="columns small-12 text-center">
+      				<h2 class="maps__title heading__title">RED UC CHRISTUS</h2>
+      			</div>
+      			<div class="columns small-12 text-center">
+      				<ul class="maps__tabs__list tabs row align-center" data-tabs id="maps-tabs">
+      				  <li class="maps__tabs__list-item tabs-title is-active">
+      				  	<a id="show_hospital" href="#panel1" aria-selected="true">Hospitales y Clínicas</a>
+      				  </li>
+      				  <li class="maps__tabs__list-item tabs-title">
+      				  	<a id="show_UTM" href="#panel2">U. Toma de Muestras</a>
+      				  </li>
+      				  <li class="maps__tabs__list-item tabs-title">
+      				  	<a id="show_CM" href="#panel2">Centros Médicos</a>
+      				  </li>
+      				</ul>
+      			</div>
+      	   </div>
+      	   <div class="row maps__main">
+      			<div id="menu" class="maps__main__menu">
+                      <ul id="hospital" class="content" style="display: block">
+                          <li class="titulo">Hospitales y Clínicas</li>
+      
+                          <li><a href="javascript:showMap('Clínica UC','<b>Ubicación</b> Lira 40 Metro U. Católica<br /> Santiago<br /> <br /><b>Teléfono</b><br />22384 6000<br />','-33.44183','-70.64121','hospital','http://redsalud.uc.cl/medios/thumbnail/clinica-lira/home-clinica-lira-288x80.png');">Clínica UC</a></li>
+      
+                          <li><a href="javascript:showMap('Clínica San Carlos de Apoquindo','<b>Ubicación</b> Camino El Alba 12351,  Las Condes.<br /><b>Teléfono</b><br />22754 8700 Mesa Central<br />22754 8800 Reserva de horas<br /><b>600 9450450 Urgencia</b><br /><br />','-33.400588','-70.509371','hospital','http://redsalud.uc.cl/medios/thumbnail/clinica-san-carlos/sancarlos-288x80.png');">Clínica San Carlos de Apoquindo</a></li>
+      
+                          <li><a href="javascript:showMap('Hospital Clínico','<b>Ubicación</b> Marcoleta 367 Metro U. Católica.<br /> <br /> <br /><b>Teléfono</b><br /><b>Mesa Central:</b> 22354 3000<br />','-33.442137','-70.64010','hospital','http://redsalud.uc.cl/medios/thumbnail/hospitalclinico/hclinico2-288x80.png');">Hospital Clínico</a></li>
+                      </ul>
+                      <ul id="UTM" class="content">
+                          <li class="titulo">U. Toma de Muestras</li>
+      
+                          <li><a href="javascript:showMap('Centro de Especialidades Médicas','<b>Ubicación</b> Marcoleta 350, Metro U. Católica<br /><b>Teléfono</b><br /><b>Informaciones y códigos:</b> 22354 8636','-33.442137','-70.64010','utm','http://redsalud.uc.cl/medios/thumbnail/laboratorios/UTM/utm-cem-288x80.png');">Centro de Especialidades Médicas</a></li>
+      
+                          <li><a href="javascript:showMap('Edificio Médico Alcántara','<b>Ubicación</b> Av. Apoquindo 3990 Metro Alcántara<br /> <br /><b>Teléfono</b><br />22354 8636','-33.415177','-70.588915','utm','http://redsalud.uc.cl/medios/thumbnail/laboratorios/UTM/blancobase-288x80.png');">Edificio Médico Alcántara</a></li>
+      
+                          <li><a href="javascript:showMap('Piedra Roja','<b>Ubicación</b> Av. Paseo Colina Sur 14500, local 157, Chicureo, Colina<br /><b>Teléfono</b><br /><b>Informaciones y códigos: </b> 22354 8636','-33.276871','-70.628038','utm','http://redsalud.uc.cl/medios/thumbnail/laboratorios/cab_piedra_roja-288x80.jpg');">Piedra Roja</a></li>
+      
+                          <li><a href="javascript:showMap('Centro Médico Irarrázaval','<b>Ubicación</b> Av. Irarrázaval 4949, Ñuñoa<br /><b>Teléfono</b><br /><b>Informaciones y códigos:</b> 22354 8636','-33.454704','-70.577827','utm','http://redsalud.uc.cl/medios/thumbnail/laboratorios/UTM/utm-irarrazaval-288x80.png');">Centro Médico Irarrázaval</a></li>
+      
+                          <li><a href="javascript:showMap('Alto Las Condes','<b>Ubicación</b> Av. Kennedy 9001, local 1106<br /> (Jumbo)<br /><b>Teléfono</b><br /><b>Informaciones y códigos:</b> 22354 8636','-33.390334','-70.545957','utm','http://redsalud.uc.cl/medios/thumbnail/laboratorios/03-288x80.png');">Alto Las Condes</a></li>
+      
+                          <li><a href="javascript:showMap('Bilbao','<b>Ubicación</b> Av. Francisco Bilbao 4144, local 180<br /><b>Teléfono</b><br /><b>Informaciones y códigos:</b> 22354 8636','-33.430263','-70.578747','utm','http://redsalud.uc.cl/medios/thumbnail/laboratorios/09-288x80.png');">Bilbao</a></li>
+      
+                          <li><a href="javascript:showMap('Consistorial','<b>Ubicación</b> Av. Consistorial 3349, local 22, Peñalolén<br /> <br /><b>Teléfono</b><br /><b>Informaciones y códigos:</b> 22354 8636','-33.48797','-70.549151','utm','http://redsalud.uc.cl/medios/thumbnail/laboratorios/UTM_Consistorial-slide-288x80.png');">Consistorial</a></li>
+      
+                          <li><a href="javascript:showMap('Costanera Center','<b>Ubicación</b> Av. Andrés Bello 2425, local 202, Providencia<br /><b>Teléfono</b><br /><b>Informaciones y códigos:</b> 22354 8636','-33.417683','-70.608252','utm','http://redsalud.uc.cl/medios/thumbnail/laboratorios/costanera-288x80.png');">Costanera Center</a></li>
+      
+                          <li><a href="javascript:showMap('Almirante Pastene','<b>Ubicación</b> Almirante Pastene 259,<br /> Metro Manuel Montt<br /><b>Teléfono</b><br /><b>Informaciones y códigos:</b> 22354 8636','-33.426552','-70.620911','utm','http://redsalud.uc.cl/medios/thumbnail/laboratorios/UTM/utm-almirante-pastene-288x80.png');">Almirante Pastene</a></li>
+      
+                          <li><a href="javascript:showMap('Los Dominicos','<b>Ubicación</b> Av. Patagonia 99, local 2, Las Condes. Metro Los Dominicos<br /><b>Teléfono</b><br /><b>Informaciones y códigos:</b> 22354 8636','-33.4074581','-70.5445665','utm','http://redsalud.uc.cl/medios/thumbnail/laboratorios/losdominicos-288x80.png');">Los Dominicos</a></li>
+      
+                          <li><a href="javascript:showMap('La Dehesa','<b>Ubicación</b> Av. El Rodeo 12850, local 38 B<br /><b>Teléfono</b><br /><b>Informaciones y códigos:</b> 22354 8636','-33.358207','-70.515632','utm','http://redsalud.uc.cl/medios/thumbnail/laboratorios/UTM/blancobase-288x80.png');">La Dehesa</a></li>
+      
+                          <li><a href="javascript:showMap('Portal La Reina','<b>Ubicación</b> Av. Francisco Bilbao 8750, local 3024<br /><b>Teléfono</b><br /><b>Informaciones y códigos:</b> 22354 8636','-33.428133','-70.540625','utm','http://redsalud.uc.cl/medios/thumbnail/laboratorios/phurtado-288x80.png');">Portal La Reina</a></li>
+      
+                          <li><a href="javascript:showMap('Arauco-Maipú','<b>Ubicación</b> Av. Américo Vespucio 1001, local 1089, Maipú<br /> <br /><b>Teléfono</b><br /><b>Informaciones y códigos:</b> 22354 8636','-33.48237','-70.75199','utm','http://redsalud.uc.cl/medios/thumbnail/laboratorios/araucomaipu-288x80.png');">Arauco-Maipú</a></li>
+      
+                          <li><a href="javascript:showMap('Maipú','<b>Ubicación</b> Av. Los Pajaritos 3044, local 3<br /><b>Teléfono</b><br /><b>Informaciones y códigos:</b> 22354 8636','-33.49966','-70.757511','utm','http://redsalud.uc.cl/medios/thumbnail/laboratorios/centromaipu-288x80.png');">Maipú</a></li>
+      
+                          <li><a href="javascript:showMap('Lira','<b>Ubicación</b> Lira 85 Piso 1<br /> Metro U. Católica<br /><b>Teléfono</b><br /><b>Informaciones y códigos:</b> 22354 8636','-33.443696','-70.641167','utm','http://redsalud.uc.cl/medios/thumbnail/laboratorios/UTM/cab_lira-288x80.jpg');">Lira</a></li>
+      
+                          <li><a href="javascript:showMap('Clínica San Carlos de Apoquindo','<b>Ubicación</b> Camino El Alba 12.351, Las Condes<br /><b>Teléfono</b><br /><b>Informaciones y códigos:</b> 22354 8636','-33.400588','-70.509371','utm','http://redsalud.uc.cl/medios/thumbnail/laboratorios/UTM/sancarlos-288x80.png');">Clínica San Carlos de Apoquindo</a></li>
+      
+                          <li><a href="javascript:showMap('Centro Médico San Joaquín','<b>Ubicación</b> Av. Vicuña Mackenna 4686, Piso 1<br /> <br /><b>Teléfono</b><br /><b>Informaciones y códigos: </b> 22354 8636','-33.497349','-70.6148','utm','http://redsalud.uc.cl/medios/thumbnail/laboratorios/sanjoaquin-288x80.png');">Centro Médico San Joaquín</a></li>
+      
+                          <li><a href="javascript:showMap('Concón','<b>Ubicación</b> Av. Concón Reñaca 3850, local 1040<br /> <br /> <br /><b>Teléfono</b><br /><b>Informaciones y códigos:</b> 22354 8636','-32.951089','-70.554447','utm','http://redsalud.uc.cl/medios/thumbnail/laboratorios/header-concon-288x80.png');">Concón</a></li>
+                      </ul>
+                      <ul id="CM" class="content">
+                          <li class="titulo">Centros Médicos</li>
+      
+                          <li><a href="javascript:showMap('Centro Médico San Joaquín', '<b>Ubicación</b> Av. Vicuña Mackenna 4686 <br /> Metro San Joaquín<br /> <br /><b>Teléfono</b><br />Reserva horas e informaciones<br />22676 7000  ','-33.497349','-70.61481','centro','http://redsalud.uc.cl/medios/thumbnail/centros_medicos/sanjoaquin-288x80.png');">Centro Médico San Joaquín</a></li>
+      
+                          <li><a href="javascript:showMap('Centro de Especialidades Médicas', '<b>Ubicación</b> Marcoleta 350  Metro U. Católica<br /> Santiago <br /><b>Teléfono</b><br /><b>Reserva de Horas</b><br />22676 7000','-33.442137','-70.64010','centro','http://redsalud.uc.cl/medios/thumbnail/centros_medicos/especialidades-288x80.png');">Centro de Especialidades Médicas</a></li>
+      
+                          <li><a href="javascript:showMap('Centro Médico Irarrázaval', '<b>Ubicación</b> Av. Irarrázaval 4949 Ñuñoa<br /><b>Teléfono</b><br /><b>Informaciones: </b><br />22944 9072 - 22944 9073<br /><b>Reserva de horas:</b>  22676 7000 ','-33.454704','-70.577827','centro','http://redsalud.uc.cl/medios/thumbnail/centros_medicos/irarrazaval-288x80.png');">Centro Médico Irarrázaval</a></li>
+      
+                          <li><a href="javascript:showMap('Centro Médico Lira', '<b>Ubicación</b> Lira 85 Metro U. Católica<br /> Santiago<br /><b>Teléfono</b><br />Reserva de horas:<br />22676 7000<br />','-33.443696','-70.641167','centro','http://redsalud.uc.cl/medios/thumbnail/centros_medicos/blancobase-288x80.png');">Centro Médico Lira</a></li>
+      
+                          <li><a href="javascript:showMap('Centro de Cáncer', '<b>Ubicación</b> Diagonal Paraguay 319 Metro U. Católica<br /> <br /><b>Teléfono</b><br />Reserva de horas<br />22676 7000','-33.443795','-70.638108','centro','http://redsalud.uc.cl/medios/thumbnail/centros_medicos/cancer2-288x80.png');">Centro de Cáncer</a></li>
+      
+                          <li><a href="javascript:showMap('Centro Médico San Jorge', '<b>Ubicación</b> Nevería 4444 Metro Escuela Militar<br /> <br /><b>Teléfono</b><br /><b>Reserva de horas</b> 2267 67000<br />','-33.41532','-70.582764','centro','http://redsalud.uc.cl/medios/thumbnail/centros_medicos/centros_home/centromedico_san_jorge-288x80.png');">Centro Médico San Jorge</a></li>
+      
+                          <li><a href="javascript:showMap('Edificio Médico Alcántara', '<b>Ubicación</b> Av. Apoquindo 3990<br /> Metro Alcántara<br /> <br /><b>Teléfono</b><br /><b>Informaciones</b> <br />Teléfono 22676 7000','-33.415177','-70.588915','centro','http://redsalud.uc.cl/medios/thumbnail/centros_medicos/alcantaranuevo-288x80.png');">Edificio Médico Alcántara</a></li>
+      
+                          <li><a href="javascript:showMap('Unidad Médica de Medicina Deportiva', '<b>Ubicación</b> Camino Las Flores 13.000 (Club Deportivo UC)<br /><b>Teléfono</b><br />Reserva de horas<br />2241 24487 - 2241 24486','-33.443538','-70.64099','centro','http://redsalud.uc.cl/medios/thumbnail/centros_medicos/blancobase-288x80.png');">Unidad Médica de Medicina Deportiva</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="row">
+      	       <div id="map" class="map"></div>
+              </div>
+      	  </div>
+      		<div class="maps__doubt text-center">
+      			<h3 class="maps__doubt__title">¿Tienes alguna duda con tu Seguro de Salud?</h3>
+      			<!-- <h3 class="maps__doubt__desc"><a data-open="modalFaq">Revisa nuestras preguntas frecuentes</a></h3> -->
+      			<h3 class="maps__doubt__desc">Llámanos al <strong><a href="tel:+56226767070">+562 2676 7070</a></strong></h3>
+      		</div>
+      		<div class="reveal" id="modalFaq" data-reveal>
+      		  <h1>Awesome. I Have It.</h1>
+      		  <p class="lead">Your couch. It is mine.</p>
+      		  <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+      		  <button class="close-button" data-close aria-label="Close modal" type="button">
+      		    <span aria-hidden="true">&times;</span>
+      		  </button>
+      		</div>
+      	</section>
+      
+      	<section class="contract" id="contract" data-magellan-target="contract">
+      		<div class="row">
+      			<div class="columns text-center">
+      				<h2 class="contract__title heading__title">¿Listo para contratar?</h2>
+      				<p class="contract__desc">El valor de tu plan dependerá del tipo de seguro seleccionado, la cantidad de asegurados y la edad del asegurado de mayor edad.</p>
+      			</div>
+      		</div>
+      		<div class="row">
+      			<div class="columns small-12 medium-4">
+      				<h4 class="contract__sub-title">Tipo de seguro</h4>
+      				<select name="" id="secure2" class="secure">
+      					<option value="secureMayor">Gastos médicos mayores</option>
+      					<option value="secureMayorMore">Gastos médicos mayores + Complementario</option>
+      				</select>
+      			</div>
+      			<div class="columns small-12 medium-4">
+      				<h4 class="contract__sub-title">Cantidad de asegurados:</h4>
+      				<select name="" id="secureCan2" class="secureCan">
+      					<option value="titular1"
+      						data-uf18="0.40"
+      						data-uf25="0.52"
+      						data-uf35="0.57"
+      						data-uf40="0.63"
+      						data-uf45="1.03"
+      						data-uf50="1.48"
+      						data-uf55="2.05"
+      						data-uf60="2.75"
+      						data-more-uf18="1.29"
+      						data-more-uf25="1.41"
+      						data-more-uf35="1.46"
+      						data-more-uf40="1.52"
+      						data-more-uf45="1.92"
+      						data-more-uf50="2.37"
+      						data-more-uf55="2.94"
+      						data-more-uf60="3.64">
+      						Titular sin asegurados dependientes
+      					</option>
+      					<option value="titular2"
+      							data-uf18="0.69"
+      							data-uf25="0.90"
+      							data-uf35="0.99"
+      							data-uf40="1.16"
+      							data-uf45="1.82"
+      							data-uf50="2.66"
+      							data-uf55="3.80"
+      							data-uf60="5.64"
+      							data-more-uf18="2.13"
+      							data-more-uf25="2.35"
+      							data-more-uf35="2.44"
+      							data-more-uf40="2.61"
+      							data-more-uf45="3.26"
+      							data-more-uf50="4.11"
+      							data-more-uf55="5.25"
+      							data-more-uf60="7.08">
+      							Titular más un asegurado dependiente
+      					</option>
+      					<option value="titular3"
+      							data-uf18="0.85"
+      							data-uf25="1.12"
+      							data-uf35="1.24"
+      							data-uf40="1.44"
+      							data-uf45="2.27"
+      							data-uf50="3.35"
+      							data-uf55="4.84"
+      							data-uf60="7.41"
+      							data-more-uf18="2.56"
+      							data-more-uf25="2.83"
+      							data-more-uf35="2.95"
+      							data-more-uf40="3.14"
+      							data-more-uf45="3.98"
+      							data-more-uf50="5.06"
+      							data-more-uf55="6.55"
+      							data-more-uf60="9.12">
+      							Titular más dos asegurados dependientes
+      					</option>
+      					<option value="titular4"
+      							data-uf18="0.97"
+      							data-uf25="1.28"
+      							data-uf35="1.42"
+      							data-uf40="1.64"
+      							data-uf45="2.61"
+      							data-uf50="3.85"
+      							data-uf55="5.58"
+      							data-uf60="8.62"
+      							data-more-uf18="2.87"
+      							data-more-uf25="3.18"
+      							data-more-uf35="3.32"
+      							data-more-uf40="3.53"
+      							data-more-uf45="4.51"
+      							data-more-uf50="5.75"
+      							data-more-uf55="7.48"
+      							data-more-uf60="10.51">
+      							Titular más tres asegurados dependientes
+      					</option>
+      				</select>
+      			</div>
+      			<div class="columns small-12 medium-4">
+      				<h4 class="contract__sub-title">Edad del asegurado de mayor edad:</h4>
+      				<select name="" id="secureDate3" class="secureDate">
+      					<option value="18">Entre 18 años - 24 años y 364 días</option>
+      					<option value="25">Entre 25 años - 34 años y 364 días</option>
+      					<option value="35">Entre 35 años - 39 años y 364 días</option>
+      					<option value="40">Entre 40 años - 44 años y 364 días</option>
+      					<option value="45">Entre 45 años - 49 años y 364 días</option>
+      					<option value="50">Entre 50 años - 54 años y 364 días</option>
+      					<option value="55">Entre 55 años - 59 años y 364 días</option>
+      					<option value="60">Entre 60 años - 69 años y 364 días</option>
+      				</select>
+      			</div>
+      		</div>
+      
+      		<div class="row contract__price__plan__free">
+      			<div class="columns contract__price__plan__value text-center">
+      				<div class="intro__price__plan">
+      					<h3 class="intro__price__title">Precio de tu plan</h3>
+      					<p class="intro__price__amount"><span class="price-peso">$ <span class="pricePeso"></span></span><span class="intro__price__second-amount">UF <span class="intro__price__second-amount priceUF"></span> / MES</span></p>
+      					<p class="intro__price__sub-title">Puedes ahorrar: <span class="priceSave">$ 33.185</span></p>
+      				</div>
+      			</div>
+      			<div class="columns small-12 text-center">
+      				<!-- Cobertura -->
+      				<a href="https://segurosaluduc.metlife.cl/VentaWeb/Formulario/ProductoSaludUCChristusPlus" target="_blank" class="changeCoverage contract__price__button button">
+      					<h3>Contrátalo ahora en línea</h3>
+      					<p><em>Y obtén 3 primeros meses de Seguro sin costo</em></p>
+      				</a>
+      
+      				<!-- Cobertura + complementario -->
+      				<a href="https://segurosaluduc.metlife.cl/VentaWeb/Formulario/ProductoSaludUCChristusPlusPlus" target="_blank" class="changeCoverageMore contract__price__button button">
+      					<h3>Contrátalo ahora en línea</h3>
+      					<p><em>Y obtén 3 primeros meses de Seguro sin costo</em></p>
+      				</a>
+      				<!-- End cobertura + complementario -->
+      			</div>
+      			<!-- <div class="columns small-12">
+      				<figure class="contract__price__plan__image text-center">
+      					<img src="assets/img/month-free.png" alt="Meses gratis">
+      				</figure>
+      			</div> -->
+      		</div>
+      
+      
+      
+      		<div class="row contract__features">
+      			<div class="columns">
+      				<ul class="contract__list">
+      					<li class="contract__list-item bullet-list">
+      						<p>Esta cotización es referencial. Los valores podrían variar de acuerdo al grupo familiar y las edades de los asegurados.<br/>
+      						Valor referencial en pesos calculado en base al valor de UF 26.329,30 del día 9 de diciembre de 2016.</p>
+      					</li>
+      					<li class="contract__list-item bullet-list">
+      						<p>La prima mensual es en UF y en el caso de grupos familiares, será calculada en base al asegurado de mayor edad dentro del grupo familiar asegurado.</p>
+      					</li>
+      					<li class="contract__list-item bullet-list">
+      						<p>Cada vez que el asegurado de mayor edad dentro del grupo familiar cambie de tramo de edad, el monto de la prima se ajustará según plan contratado en los términos que se establecen en la tabla. Igual ajuste se efectuará cada vez que se modifique el número de asegurados dependientes cubiertos por el seguro.</p>
+      					</li>
+      				</ul>
+      			</div>
+      		</div>
+      	</section>
+      
+      		<section class="footer">
+      			<div class="footer__row row">
+      				<div class="columns small-12">
+      					<p>El riesgo es cubierto por MetLife Chile Seguros de Vida S.A., RUT N° 99.289.000-2. Condiciones Generales depositadas en la SVS bajo POL 3 2015 0527 Seguro de Catastrófico, POL 3 2013 0223 Seguro Complementario de Salud, CAD 2 2013 0244 y CAD 2 2013 0227 para Cláusula de Exoneración de Primas. La presente información es sólo un resumen de las coberturas, términos, exclusiones y condiciones del Seguro Red de Salud UC CHRISTUS, detalle de éstas se encuentra en las Condiciones Generales y en las Condiciones Particulares de la Póliza.</p>
+      					
+      					<p>Los 3 primeros meses de cobertura sin costo del Seguro Salud Red UC CHRISTUS son exclusivas para la contratación por Internet.</p>
+      
+      					<p>Oferta exclusiva para personas naturales, ubicadas en Chile.</p>
+      				</div>
+      				<div class="columns small-12">
+      					<figure class="footer__logo text-center">
+      						<img src="assets/img/metlife-logo.png" alt="Logotipo MetLife">
+      					</figure>
+      				</div>
+      			</div>
+      		</section>
+      	</div> <!-- End wrapper -->
+
+    <script src="assets/js/app.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAX-9LvvKVES7uk_BU_c1S_RUKdB-vl4J4&libraries=places&callback=initMap"></script>
+    
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NG435W"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NG435W');</script>
+    <!-- End Google Tag Manager -->
+  </body>
+</html>
