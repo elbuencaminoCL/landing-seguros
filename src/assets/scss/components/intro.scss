@@ -107,6 +107,9 @@
 		.pricePeso {
 			font-size: 70px;
 		}
+		.price-peso sup {
+			top: -1.1em;
+		}
 		& > .intro__price__second-amount {
 			display: block;
 			margin: 0 auto;
@@ -173,7 +176,7 @@
 				top: 0;
 			}
 			img {
-				height: 1000px;
+				height: 800px;
 			}
 		}
 		.intro__columns {
